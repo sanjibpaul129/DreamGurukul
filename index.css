@@ -268,36 +268,19 @@
 
 .icon {
   width: 40px;
-  /* Adjust the icon width as needed */
-  height: 40px;
-  /* Adjust the icon height as needed */
+  height: 40px; 
 }
-
-/* .social-bar {
-  position: fixed;
-  top: 50%;
-  right: 0%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 2;
+.android-large-2 {
+  background-color: #fff;
+  width: 100%;
+  height: 543px;
+  overflow: hidden;
 }
-
-.social-bar a {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
+.gurukul_index_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 404px;
+  height: 695px;
+  object-fit: cover;
 }
-
-.social-bar a:hover {
-  background-color: #000;
-}
-
-.linkedin {
-  display: none !important;
-  background: #0000007a;
-  color: white;
-} */
