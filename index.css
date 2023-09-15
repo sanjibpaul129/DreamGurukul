@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 358px;
-  height: 699px;
+  height: 518px;
+  object-fit: cover;
 }
 
 .gurukul-bro-06-04-23-low-2-1,
@@ -282,4 +283,9 @@
   width: 404px;
   height: 720px;
   object-fit: cover;
+}
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
 }
