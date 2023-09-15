@@ -285,7 +285,9 @@
   object-fit: cover;
 }
 
-.thumbnail {
-  max-width: 100%;
-  height: auto;
+.xyz-image {
+  width: 400px;
+  height: 387px;
+  object-fit: cover;
+  border: 1px solid #ccc;
 }
