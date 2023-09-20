@@ -306,7 +306,7 @@
   overflow: hidden;
 }
 
-.index_first {
+/* .index_first {
   position: absolute;
   top: 0;
   left: 0;
@@ -321,4 +321,25 @@
   width: 359px;
   height: 779px;
   object-fit: cover;
+} */
+.index_first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  max-width: 400px;
+}
+
+.comingSoon {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 50%;
+  max-width: 400px;
+}
+@media (max-width: 768px) {
+  .index_first, .comingSoon {
+      width: 100%;
+      max-width: none;
+  }
 }
