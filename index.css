@@ -248,6 +248,7 @@
   top: 17715px;
 }
 
+
 .android-large-1 {
   position: relative;
   background-color: #fff;
@@ -342,4 +343,174 @@
       width: 100%;
       max-width: none;
   }
+}
+
+
+
+.desktop {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 19157px;
+  position: relative;
+}
+
+.desktop .gurukul-bro {
+  position: absolute;
+  width: 1438px;
+  height: 1016px;
+  top: 2151px;
+  left: 0;
+  object-fit: cover;
+}
+
+.desktop .img {
+  position: absolute;
+  width: 1440px;
+  height: 2131px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-2 {
+  position: absolute;
+  width: 1435px;
+  height: 1040px;
+  top: 3187px;
+  left: 3px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-3 {
+  width: 1437px;
+  height: 1040px;
+  top: 6391px;
+  position: absolute;
+  left: 3px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-4 {
+  position: absolute;
+  width: 1437px;
+  height: 1040px;
+  top: 7451px;
+  left: 3px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-5 {
+  position: absolute;
+  width: 1423px;
+  height: 1040px;
+  top: 9566px;
+  left: 9px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-6 {
+  position: absolute;
+  width: 1432px;
+  height: 1035px;
+  top: 8511px;
+  left: 0;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-7 {
+  width: 1423px;
+  height: 1122px;
+  top: 10626px;
+  position: absolute;
+  left: 3px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-8 {
+  position: absolute;
+  width: 1417px;
+  height: 1040px;
+  top: 11768px;
+  left: 9px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-9 {
+  position: absolute;
+  width: 1423px;
+  height: 992px;
+  top: 12832px;
+  left: 15px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-10 {
+  position: absolute;
+  width: 1423px;
+  height: 1040px;
+  top: 13848px;
+  left: 15px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-11 {
+  position: absolute;
+  width: 1423px;
+  height: 1040px;
+  top: 14910px;
+  left: 15px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-12 {
+  position: absolute;
+  width: 1423px;
+  height: 1040px;
+  top: 15972px;
+  left: 15px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-13 {
+  position: absolute;
+  width: 1423px;
+  height: 1040px;
+  top: 17034px;
+  left: 8px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-14 {
+  position: absolute;
+  width: 1423px;
+  height: 1040px;
+  top: 18089px;
+  left: 8px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-15 {
+  position: absolute;
+  width: 1425px;
+  height: 1046px;
+  top: 4247px;
+  left: 15px;
+  object-fit: cover;
+}
+
+.desktop .gurukul-bro-16 {
+  position: absolute;
+  width: 1431px;
+  height: 1065px;
+  top: 5313px;
+  left: 9px;
+  object-fit: cover;
 }
