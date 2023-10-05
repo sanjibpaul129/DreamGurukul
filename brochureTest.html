@@ -1,10 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
 
-  <!-- Google Tag Manager -->
-  <!-- End Google Tag Manager -->
 
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -40,8 +39,6 @@
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <!-- End Google Tag Manager (noscript) -->
 
   <div class="fixed-icons">
     <a href="https://api.whatsapp.com/send?phone=8967181069" target="_blank">
@@ -160,7 +157,32 @@
 
 
 
-<script>
+    <script>
+        // Function to replace mobile numbers with call icons
+        function replaceMobileNumbers() {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('text');
+            const mobileNumbers = document.querySelectorAll('.mobile-number');
+
+            mobileNumbers.forEach((numberElement) => {
+                const mobileNumber = numberElement.textContent.trim();
+
+                // Check if the mobile number matches the one in the URL
+                if (name && mobileNumber === name) {
+                    // Replace the mobile number with a call icon
+                    numberElement.innerHTML = '<a href="tel:' + name + '"><i class="fa fa-phone"></i></a>';
+                }
+            });
+        }
+
+
+        // Call the function when the page loads
+        window.addEventListener('load', replaceMobileNumbers);
+
+        // You can also call this function whenever you update the URL, e.g., in response to user interactions
+        // For example, if you have a button that changes the URL parameter, you can call replaceMobileNumbers() when that button is clicked.
+    </script>
+<!-- <script>
 const params = new URLSearchParams(window.location.search);
 const name = params.get('text');
 if (name) {
@@ -168,7 +190,7 @@ if (name) {
   document.getElementById('hiddenName').value = name;
   history.pushState({}, null, `?text=${name}`);
 }
-</script>
+</script> -->
 
 <!-- <script>
     const params = new URLSearchParams(window.location.search);
