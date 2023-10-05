@@ -11,6 +11,26 @@
   <link rel="stylesheet" href="./global.css" />
   <link rel="stylesheet" href="./index.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .content-for-mobile {
+      display: none;
+    }
+
+    .content-for-desktop {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .content-for-mobile {
+        display: block;
+      }
+
+      .content-for-desktop {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -19,6 +39,11 @@
     <img class="comingSoon" alt="" src="./new1/comingSoon.jpg">
 
   </div>
+  <div class="content-for-desktop">
+    <div class="desktop">
+      <div class="div">
+        <img class="img" src="./new1/gurukul-bro-06-04-23-low-1-1.jpg" />
+        <img class="dextop_coming soon" src="./new1/dextop_coming soon.jpg" />
 </body>
 
 
