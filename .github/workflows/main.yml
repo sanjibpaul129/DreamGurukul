@@ -16,3 +16,4 @@ jobs:
           RECIPIENT_EMAIL: system1@thejaingroup.com
         run: |
           echo "A push event has occurred in the repository." | mail -s "GitHub Push Notification" $RECIPIENT_EMAIL
+
