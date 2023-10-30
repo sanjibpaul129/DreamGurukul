@@ -1,0 +1,17 @@
+name: Notify on Push
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send email notification
+        env:
+          RECIPIENT_EMAIL: system1@thejaingroup.com
+        run: |
+          echo "A push event has occurred in the repository." | mail -s "GitHub Push Notification" $RECIPIENT_EMAIL
