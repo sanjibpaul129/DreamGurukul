@@ -1,4 +1,14 @@
-.gurukul-bro-06-04-23-low-1-1 {
+.android-large-1{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+/* .gurukul-bro-06-04-23-low-1-1 { 
   position: absolute;
   top: 0;
   left: 0;
@@ -256,7 +266,7 @@
   height: 18260px;
   overflow: hidden;
 }
-
+ */
 .fixed-icons {
   position: fixed;
   top: 50%;
@@ -346,15 +356,19 @@
 }
 
 
-
-.desktop {
+/* .desktop {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
-
+ */
+.div{
+  display: flex;
+  flex-direction: column;
+}
+/*
 .desktop .div {
   background-color: #ffffff;
   width: 1440px;
@@ -514,3 +528,4 @@
   left: 9px;
   object-fit: cover;
 }
+ */
