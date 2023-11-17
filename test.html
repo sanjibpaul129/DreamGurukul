@@ -1,0 +1,145 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+/* Default styles for desktop */
+.accordion {
+  display: block;
+}
+
+/* .accordion-content {
+  display: none;
+} */
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  /* .accordion-container {
+    display: none;
+  } */
+
+  .mobile-dropdown {
+    display: block;
+  }
+  h3{
+    display: none;
+  }
+}
+
+</style>
+
+<!-- Mobile select dropdown -->
+<select class="mobile-dropdown">
+    <option value="acc1">Structure</option>
+    <option value="acc2">External / Internal Finish</option>
+    <option value="acc3">Façade Style</option>
+    <option value="acc4">Plumbing, Bathroom & Toilets</option>
+    <option value="acc5">Door & Windows</option>
+    <option value="acc6">Electricals</option>
+    <option value="acc7">Safety</option>
+    <option value="acc8">Special Feature’s</option>
+</select>
+  
+<div class="accordion-container">
+    <div class="accordion" id="acc1">
+        <h3 class="accordian-title">Structure</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>Earth Quake Resistant R.C.C. Structure</li>
+                <li>125 mm thick Internal & External AAC Block Wall</li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion" id="acc2">
+        <h3 class="accordian-title">External / Internal Finish</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>AAC Block Masonry, Sand Faced External Plaster</li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion" id="acc3">
+        <h3 class="accordian-title">Façade Style</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>Concealed Wiring with Modular Switches</li>
+                <li>TV & Telephone Point in Living & Master Bedroom</li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion" id="acc4">
+        <h3 class="accordian-title">Plumbing, Bathroom & Toilets</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>Concealed Plumbing with Standard CP Fittings</li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion" id="acc5">
+        <h3 class="accordian-title">Door & Windows</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>600mm x 600mm Vitrified Tiles in Full Apartment</li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion" id="acc6">
+        <h3 class="accordian-title">Electricals</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>600mm x 600mm Vitrified Tiles in Full Apartment</li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion" id="acc7">
+        <h3 class="accordian-title">Safety</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>600mm x 600mm Vitrified Tiles in Full Apartment</li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion" id="acc8">
+        <h3 class="accordian-title">Special Feature’s</h3>
+        <div class="accordion-content">
+            <ul class="loc-list row custom-scroll">
+                <li>600mm x 600mm Vitrified Tiles in Full Apartment</li>
+            </ul>
+        </div>
+    </div>
+</div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+  
+  <script>
+    $(document).ready(function() {
+      // Hide all accordion content except the first one
+      $('.accordion:not(:first-child) .accordion-content').hide();
+      
+      // For desktop: Toggle accordion on click
+      $('.accordion h3').click(function() {
+        var $accordion = $(this).parent('.accordion');
+        
+        // Hide other accordions' content and remove 'active' class
+        $('.accordion').not($accordion).removeClass('active');
+        $('.accordion-content').not($accordion.find('.accordion-content')).slideUp();
+        
+        // Toggle 'active' class and slideToggle the clicked accordion's content
+        $accordion.toggleClass('active');
+        $accordion.find('.accordion-content').slideToggle();
+      });
+    
+      // For mobile: Handle select option change
+      $('.mobile-dropdown').change(function() {
+        var selectedValue = $(this).val();
+        
+        // Hide all accordion content and remove 'active' class from all accordions
+        $('.accordion-content').hide();
+        $('.accordion').removeClass('active');
+        
+        if (selectedValue) {
+          $('#' + selectedValue).addClass('active'); // Add 'active' class to selected accordion
+          $('#' + selectedValue + ' .accordion-content').show(); // Show the content of the selected accordion
+        }
+      });
+    });
+    </script>
+  
