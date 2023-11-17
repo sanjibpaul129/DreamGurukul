@@ -1,5 +1,4 @@
 <?php include 'header.php' ?>
-
 <!-- <section class="banner pos-rel" id="home">
     <img src="assets/images/logo.svg" class="hidden-xs logo" alt="Overview">
     <div class="container h100">
