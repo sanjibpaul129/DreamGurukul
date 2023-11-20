@@ -3,18 +3,6 @@ var winWD = $(window).width();
 // var navHt = $("header").outerHeight();
 // var bannerHt = winHT - navHt;
 // var loc = window.location.pathname.split("/").pop();
-if (winWD <= 992) {     
-	$('.banner-image-main').each(function() {
-		var src = $(this).attr("src");
-		$(this).attr("src", src.replace(/\-desk.webp$/i, "-mob.webp"));
-	});
-
-  $('.banner-image').each(function() {
-		var src = $(this).attr("data-lazy");
-		$(this).attr("data-lazy", src.replace(/\-desk.webp$/i, "-mob.webp"));
-	});
-}
-
 const lenis = new Lenis({
   content: document.section,
   lerp:100,
@@ -36,9 +24,6 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-
-
-
 // // set height of the svg path as constant
 // const svg = document.getElementById("svgPath");
 // const length = svg.getTotalLength();
@@ -58,6 +43,17 @@ requestAnimationFrame(raf);
 //   svg.style.strokeDashoffset = length - draw;
 // });
 
+if (winWD <= 992) {     
+	$('.banner-image-main').each(function() {
+		var src = $(this).attr("src");
+		$(this).attr("src", src.replace(/\-desk.webp$/i, "-mob.webp"));
+	});
+
+  $('.banner-image').each(function() {
+		var src = $(this).attr("data-lazy");
+		$(this).attr("data-lazy", src.replace(/\-desk.webp$/i, "-mob.webp"));
+	});
+}
 
 setTimeout(function() {
   $('#light').fadeIn();        
@@ -178,3 +174,11 @@ $(document).ready(function () {
             $(".form-container").slideToggle();
         }
     });
+    $(document).on("click","#download-brochure",function() {
+          $('#light').show();
+          $('#fade').show();
+          download_brochure = 1;
+          // console.log(download_brochure);
+    });
+
+    

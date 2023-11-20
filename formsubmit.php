@@ -5,6 +5,8 @@ ini_set('display_errors', '1');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // API endpoint URL
     // $apiUrl = 'http://www.realtybucket.com/webhook/website_form_data';
+
+
     $curl = curl_init();
     
     curl_setopt_array($curl, array(

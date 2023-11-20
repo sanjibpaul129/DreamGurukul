@@ -8,48 +8,55 @@
 	<!-- <meta name="google-site-verification" content="pMvw1LWBc2hcmhpIV15Wl3Fr2zo4NiJwnL_cQm3O9gI" /> -->
 	<link rel="icon" href="assets/images/favicon.webp" disabled />
 	<title>Dream Gurukul: Buy 3 BHK Flats in Madhyamgram, Kolkata</title>
-	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale in Madhyamgram Kolkata near airport to enhance lifestyle of your kids for a bright future."/>
+	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale in Madhyamgram Kolkata near airport to enhance lifestyle of your kids for a bright future." />
 	<meta name="keywords" content="Dream Gurukul" />
 	<!-- <link rel="dns-prefetch" href="https://use.typekit.net/">
 	<link rel="preconnect" href="https://use.typekit.net/"> -->
 	<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>" />
 	<!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
 	<link rel="stylesheet" href="assets/css/all.css">
-	
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJGBYLED8"></script>
-    <script>            window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-KKJGBYLED8', {
-        });
-    </script>
-	
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'G-KKJGBYLED8', {});
+
+		var download_brochure = 0;
+	</script>
+<style>
+	.d-inline-block{
+		display: inline-block;
+	}
+</style>
 </head>
 
 <body>
-  <div id="light" class="white_content">  	
-	<div class="form-wrap" id="">
-        <div class="cont-desc">Enquiry Form</div>
-        <form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate>
-            <input type="hidden" name="utmsource" class="utmSource" value="">
-			<input type="hidden" name="utmcampaign" class="utmCampaign" value="">
-			<input type="hidden" name="utmmedium" class="utmMedium" value="">
-			<input type="hidden" name="utmterm" class="utmTerm" value="">
-            <div class="col-12 pos-rel">
-                <input class="full iptxt" onkeydown="return /[a-z, ]/i.test(event.key)" type="text" id="sname" name="fullname" placeholder="Full Name*" required>
-            </div>
-            <div class="col-12 pos-rel">
-                <input class="full" type="tel" id="phone" name="phone" placeholder="Phone Number*" maxlength="13" required>
-            </div>
-            <div class="col-12 pos-rel">
-                <input class="full" id="email" name="email" type="email" placeholder="Email*" required><br class="hidden-xs">
-            </div>
-			<div class="col-12 pos-rel">
-				<input class="full" name="comments" type="textarea" placeholder="Comments"><br class="hidden-xs">
-			</div>
-            <!-- <div class="col-12">
+	<div id="light" class="white_content">
+		<div class="form-wrap" id="">
+			<div class="cont-desc">Enquiry Form</div>
+			<form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate>
+				<input type="hidden" name="utmsource" class="utmSource" value="">
+				<input type="hidden" name="utmcampaign" class="utmCampaign" value="">
+				<input type="hidden" name="utmmedium" class="utmMedium" value="">
+				<input type="hidden" name="utmterm" class="utmTerm" value="">
+				<div class="col-12 pos-rel">
+					<input class="full iptxt" onkeydown="return /[a-z, ]/i.test(event.key)" type="text" id="sname" name="fullname" placeholder="Full Name*" required>
+				</div>
+				<div class="col-12 pos-rel">
+					<input class="full" type="tel" id="phone" name="phone" placeholder="Phone Number*" maxlength="13" required>
+				</div>
+				<div class="col-12 pos-rel">
+					<input class="full" id="email" name="email" type="email" placeholder="Email*" required><br class="hidden-xs">
+				</div>
+				<div class="col-12 pos-rel">
+					<input class="full" name="comments" type="textarea" placeholder="Comments"><br class="hidden-xs">
+				</div>
+				<!-- <div class="col-12">
                 <select id="course" class="full" name="class" required>
                     <option name="class" value="">Select Class*</option>
                     <option name="class" value="Course">Nursury</option>
@@ -63,27 +70,39 @@
                     <option name="class" value="Course">Standard 6</option>
                 </select><br class="hidden-xs">
             </div> -->
-            <input type="submit" class="enquire-btn-now submit-btn theme-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
-        </form>
-        <div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
-    </div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="assets/images/close.webp" alt="Overview"></a>
-  </div>
-  <div id="fade" class="black_overlay">
+				<input type="submit" class="enquire-btn-now submit-btn theme-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
+			</form>
+			<div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
+		</div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="assets/images/close.webp" alt="Overview"></a>
+	</div>
+	<div id="fade" class="black_overlay">
 
-  </div>
-  <div class="sticky-btn">
-  <a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                    <img src="assets/images/left1.webp" class="left" alt="Overview">
-                    <div class="center pos-rel">
-                        <div class="centertxt">KNOW MORE</div>
-                        <img src="assets/images/center1.webp" alt="Overview">
-        </div>
-        <img src="assets/images/right1.webp" class="right" alt="Overview">
-    </a>
-  </div>
-<div class="fixed-whatsapp-icon">
-	<a href="https://wa.me/919330290724?text=Interested%20in%20Dream%20Gurukul" target="_blank"><img src="./assets/images/whatsapp-icon.webp" alt=""></a>
-</div>
+	</div>
+	<div class="sticky-btn">
+		<div class="d-inline-block">
+		<a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+			<img src="assets/images/left1.webp" class="left" alt="Overview">
+			<div class="center pos-rel">
+				<div class="centertxt">KNOW MORE</div>
+				<img src="assets/images/center1.webp" alt="Overview">
+			</div>
+			<img src="assets/images/right1.webp" class="right" alt="Overview">
+		</a>
+		</div>
+		<div class="d-inline-block">
+		<a class="btnbox" href="javascript:;" id="download-brochure">
+			<img src="assets/images/left1.webp" class="left" alt="Overview">
+			<div class="center pos-rel">
+				<div class="centertxt">Download Brochure</div>
+				<img src="assets/images/center1.webp" alt="Overview">
+			</div>
+			<img src="assets/images/right1.webp" class="right" alt="Overview">
+		</a>
+		</div>
+	</div>
+	<div class="fixed-whatsapp-icon">
+		<a href="https://wa.me/919330290724?text=Interested%20in%20Dream%20Gurukul" target="_blank"><img src="./assets/images/whatsapp-icon.webp" alt=""></a>
+	</div>
 	<!-- <header>
 		<div class="container pos-rel header-br">
 			<div class="row align-center">
