@@ -56,9 +56,10 @@
 			$.validator.setDefaults({
 				submitHandler: function () {
 
-					$("#enquiryForm .submit").attr("disabled", "disabled");
-					$('#enquiryForm').hide();
-					$('#enquirySuccess').show();
+					$(".enquire-btn-now").attr("disabled", "disabled");
+					$(".enquire-btn-now").val("Please Wait");
+					
+					// $('#enquirySuccess').show();
 
 					try { dataLayer.push({ 'event': 'form_submitted' }); } catch (err) { }
 					// debugger;
@@ -71,6 +72,8 @@
 							var email = $("#email").val();
 							var phone = $("#phone").val();
 							trackecommerce_ga4("G-KKJGBYLED8", "", "Jain Group", email.replace(/\*|/g, ''), phone.replace(/\*|/g, ''));
+							$('#enquiryForm').hide();
+							window.location.href = "thankyou.php";
 						},
 						error: function (respond_message) { }
 					});

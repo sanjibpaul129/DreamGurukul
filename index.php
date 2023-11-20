@@ -1,4 +1,5 @@
 <?php include 'header.php' ?>
+
 <!-- <section class="banner pos-rel" id="home">
     <img src="assets/images/logo.svg" class="hidden-xs logo" alt="Overview">
     <div class="container h100">
@@ -66,7 +67,7 @@
 <section class="sec2 padding lazy" data-src="assets/images/sec2bg.webp">
     <div class="container">
         <div class="row">
-            <div class="col-11 col-sm-12 col-xs-12">
+            <div class="col-9 col-sm-12 col-xs-12">
                 <h2 class="text-reg">
                     <p class="sec-head revealOnScroll" data-animation="fadeInLeft" data-timeout="200">A lifestyle that nurtures your kids with a</p>
                     <div class="sec-subdesc revealOnScroll" data-animation="fadeInLeft" data-timeout="300"><img data-src="assets/images/r.svg" class="lazy" alt="Overview"><span>ich culture!</span></div>
