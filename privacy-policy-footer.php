@@ -1,49 +1,9 @@
-<footer class="footer-div pos-rel lazy" data-src="assets/images/ftrbg.webp">
+<footer class="footer-div pos-rel lazy" data-src="assets/images/ftrbg.webp" style="height:100%">
 	<div class="container">
 		<div class="row">
 			<img data-src="assets/images/jaingroup.webp" class="lazy jaingroup">
-			<div class="ftrbox">
-				<div class="col1">
-					<div class="ftrtxt">Corporate Office: <br>Jain Tower, 44/2A, Hazra Road <br>Near Dover Road Crossing, Kolkata - 700 019</div>
-					<div class="ctabx">
-						<a class="phone" href="tel:+913340319999"><span><img data-src="assets/images/call.svg" class="lazy"></span>+91 33 4031 9999</a>
-						<a class="phone" href="mailto:www.thejaingroup.com"><span><img data-src="assets/images/mail.svg" class="lazy"></span>www.thejaingroup.com</a>
-					</div>
-				</div>
-				<img data-src="assets/images/ftrbr.svg" class="lazy hidden-xs">
-				<div class="col1 col2">
-					<div class="ftrtxt">Project Office: <br> Doltala Rd, Ward 16, Madhyamgram, <br>Kolkata, West Bengal - 700132</div>
-					<div class="ctabx">
-						<a class="phone" href="tel:+919681411411"><span><img data-src="assets/images/call.svg" class="lazy"></span>+91 9681 411 411</a>
-						<a class="phone" href="mailto:www.thejaingroup.com"><span><img data-src="assets/images/mail.svg" class="lazy"></span>www.thejaingroup.com</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container marketcont">
-		<div class="row">
-			<div class="col-12">
-				<div class="footer-bottom col-12">
-					<div class="rera col-8 col-xs-12">
-						<p>© <span id="year"></span> - All Rights Reserved | <br class="visible-xs"><span class="bold">Marketed By <a href="https://beyondwalls.com" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="BeyondWalls">BeyondWalls</a></span> | <br class="visible-xs"><a href="https://dreamgurukul.in/privacy-policy.php" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="Privacy Policy">Privacy Policy</a></p>
-					</div>
-					<div class="marketed col-4 col-xs-12">
-						<!-- <p><span class="bold">Marketed By <a href="https://beyondwalls.com" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="BeyondWalls">BeyondWalls</a></span></p> -->
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </footer>
-<div class="col-12 footer-call-enquire">
-	<div class="col-6">
-		<a data-event-category="Footer" data-event-action="click" data-event-name="Call"><span class="sell_do_virtual_numbers"></span></a>
-	</div>
-	<div class="col-6 enq">
-		<div class="enquire-btn dbro open-form extLink mobile" data-event-category="Footer" data-event-action="click" data-event-name="Enquire Now" style="color:#fff;">Enquire Now</div>
-	</div>
-</div>
 
 <script src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/all.js"></script>
