@@ -102,6 +102,18 @@ dd {
 	max-width:1200px;
 	margin:0px auto;
 	padding: 0 15px;
+	@media (max-width:$sl) {
+		padding: 0 25px;
+	}
+	@media (max-width: $md) {
+        padding: 0 50px;
+    }
+    @media (max-width: $sm) {
+        padding: 0 40px;
+    }
+    @media (max-width: $xs) {
+        padding: 0 20px;
+    }
 }
 .pull-left{float: left!important;}
 .pull-right{float: right!important;}
@@ -118,6 +130,7 @@ dd {
 .text-medium{font-weight: 500;}
 .text-semibold{font-weight: 600;}
 .text-bold{font-weight: 700;}
+.bg-pink{background-color: $bg_pink;}
 .img-responsive {
 	max-width: 100%;
 	height: auto;
@@ -195,6 +208,12 @@ section {
 .visible-xs{display: none!important;}
 .visible-sm{display: none!important;}
 .hidden-xs{display: block;}
+.disptable{display: table;height: 100%;}
+.dispblock{display: block;}
+.disInBlock{display: inline-block;}
+.table-cell{display: table-cell;vertical-align: middle;}
+.vert-middle{vertical-align: middle;}
+.dis-flex{display: flex;align-items: center;}
 .row {
 	&:before {
 		display: table;

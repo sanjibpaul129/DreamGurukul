@@ -1,5 +1,4 @@
-<?php include 'header.php' ?>
-
+<?php include "header.php" ?>
 <section class="sec2 padding lazy" data-src="assets/images/sec2bg.webp">
     <div class="container">
         <div class="row">
@@ -32,5 +31,4 @@
 
     </div>
 </section>
-
-<?php include 'privacy-policy-footer.php' ?>
+<?php include "footer.php" ?>

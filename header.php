@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<!-- <meta name="google-site-verification" content="pMvw1LWBc2hcmhpIV15Wl3Fr2zo4NiJwnL_cQm3O9gI" /> -->
 	<link rel="icon" href="assets/images/favicon.webp" disabled />
-	<title>Dream Gurukul: Buy 3 BHK Flats near Airport, Kolkata</title>
-	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale near the airport, to enhance lifestyle of your kids for a bright future."  />
+	<title>Dream Gurukul: Buy 3 BHK Flats in Madhyamgram, Kolkata</title>
+	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale in Madhyamgram Kolkata near airport to enhance lifestyle of your kids for a bright future." />
 	<meta name="keywords" content="Dream Gurukul" />
 	<!-- <link rel="dns-prefetch" href="https://use.typekit.net/">
 	<link rel="preconnect" href="https://use.typekit.net/"> -->
@@ -40,15 +40,15 @@
 		<div class="form-wrap" id="">
 			<div class="cont-desc">Enquiry Form</div>
 			<form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate>
-				<input type="hidden" name="utmsource" class="utmSource" value="">
-				<input type="hidden" name="utmcampaign" class="utmCampaign" value="">
-				<input type="hidden" name="utmmedium" class="utmMedium" value="">
-				<input type="hidden" name="utmterm" class="utmTerm" value="">
+				<input type="hidden" name="utmsource" class="utmSource" value="<?php echo $_GET['utm_source']; ?>">
+				<input type="hidden" name="utmcampaign" class="utmCampaign" value="<?php echo $_GET['utm_campaign']; ?>">
+				<input type="hidden" name="utmmedium" class="utmMedium" value="<?php echo $_GET['utm_medium']; ?>">
+				<input type="hidden" name="utmterm" class="utmTerm" value="<?php echo $_GET['utm_term']; ?>">
 				<div class="col-12 pos-rel">
 					<input class="full iptxt" onkeydown="return /[a-z, ]/i.test(event.key)" type="text" id="sname" name="fullname" placeholder="Full Name*" required>
 				</div>
 				<div class="col-12 pos-rel">
-					<input class="full" type="tel" id="phone" name="phone" placeholder="Phone Number*" maxlength="13" required>
+					<input class="full phoneVal" type="tel" id="phone" name="phone" placeholder="Phone Number*" minlength="10" maxlength="13" required>
 				</div>
 				<div class="col-12 pos-rel">
 					<input class="full" id="email" name="email" type="email" placeholder="Email*" required><br class="hidden-xs">
@@ -70,7 +70,7 @@
                     <option name="class" value="Course">Standard 6</option>
                 </select><br class="hidden-xs">
             </div> -->
-				<input type="submit" class="enquire-btn-now submit-btn theme-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
+				<input type="submit" class="enquire-btn-now submit-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
 			</form>
 			<div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
 		</div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="assets/images/close.webp" alt="Overview"></a>

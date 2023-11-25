@@ -55,13 +55,13 @@ if (winWD <= 992) {
 	});
 }
 
-setTimeout(function() {
-  $('#light').fadeIn();        
-}, 10000);
+// setTimeout(function() {
+//   $('#light').fadeIn();       
+// }, 1000000);
 
-setTimeout(function() {
-  $('#fade').fadeIn();        
-}, 10000);
+// setTimeout(function() {
+//   $('#fade').fadeIn();        
+// }, 10000);
 
 var nextbtn = "url(assets/images/next.svg),auto";
 var prevbtn = "url(assets/images/prev.webp),auto";
@@ -75,18 +75,18 @@ $(window).on('scroll', function() {
   });
 });
 
-$(document).ready(function(){
-  var mouseY = 0;
-  var topValue = 0;
-  window.addEventListener("mouseout",function(e){
-      mouseY = e.clientY;
-      if(mouseY<topValue) {
-          $('#light').show();
-          $('#fade').show();
-      }
-  },
-  false);
-});
+// $(document).ready(function(){
+//   var mouseY = 0;
+//   var topValue = 0;
+//   window.addEventListener("mouseout",function(e){
+//       mouseY = e.clientY;
+//       if(mouseY<topValue) {
+//           $('#light').show();
+//           $('#fade').show();
+//       }
+//   },
+//   false);
+// });
 
 // function isScrolledIntoView(elem) {
 //   var docViewTop = $(window).scrollTop();
@@ -158,6 +158,186 @@ $(document).ready(function () {
         prevArrow:'#banner-prev',
         nextArrow:'#banner-next',   
       });
+
+
+      $('.instrument-slider').slick({
+        arrows: true,
+        autoplay:false,
+        lazyLoad: 'ondemand',
+        dots: false,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        centerMode:true,
+        centerPadding:'230px',      
+        prevArrow:'#inst-prev',
+        nextArrow:'#inst-next',
+        responsive: [
+          {
+            breakpoint:1025,
+            settings:{
+              // slidesToShow:2,
+              centerPadding:'150px',
+            }
+          },
+          {
+            breakpoint: 993,
+            settings: {
+              arrows: true,
+              autoplay:false,
+              lazyLoad: 'ondemand',
+              dots: false,
+              autoplaySpeed: 5000,
+              speed: 1000,
+              centerMode:false,
+              centerPadding:'0',
+              prevArrow:'#inst-prev',
+              nextArrow:'#inst-next',
+            }
+          },
+        ]   
+      });
+      $('.specInfoSlider').slick({
+        slidesToShow:3,
+        // slidesToScroll:1,
+        asNavFor:'.towe-a-slider',
+        focusOnSelect:true,
+        autoplay:false,
+        vertical:true,
+      })
+      $('.specInfoSlider2').slick({
+        slidesToShow:3,
+        // slidesToScroll:1,
+        asNavFor:'.towe-b-slider',
+        focusOnSelect:true,
+        autoplay:false,
+        vertical:true,
+      })
+      $('.locationIconWrapper').slick({
+        slidesToShow:4,
+        arrows:false,
+        autoplay:true,
+        responsive: [
+          {
+            breakpoint: 640,
+            settings: {
+              // rows:2,
+              slidesToShow:1,
+              // slidesPerRow: 1,
+              // rows: 4
+            }
+          },
+        ]
+      });
+      $('.locMobSlider').slick({
+        slidesToShow:1,
+        arrows:true,
+        prevArrow:'#locMobLeft',
+        nextArrow:'#locMobRight',
+      })
+
+      $('.gallery-slider').slick({
+        arrows: true,
+        autoplay:true,
+        lazyLoad: 'ondemand',
+        dots: false,
+        autoplaySpeed: 5000,
+        speed: 1000,      
+        prevArrow:'#gallery-prev',
+        nextArrow:'#gallery-next',   
+      });
+
+
+      $('.tabs-wrapper a').on('click',function(){    
+            var link = $(this).attr('rel');
+            $('.tabs-wrap').hide();
+            $('#'+link).fadeIn();
+            $('.tabs-wrapper a').removeClass('tab-active');
+            $(this).addClass('tab-active');
+            $('.towe-a-slider, .towe-b-slider, .specInfoSlider, .specInfoSlider2').slick('refresh');
+      });
+
+      $('.towe-a-slider').slick({
+        arrows: true,
+        autoplay:true,
+        lazyLoad: 'ondemand',
+        dots: false,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        asNavFor:'.specInfoSlider',      
+        prevArrow:'#tower-a-prev',
+        nextArrow:'#tower-a-next',   
+      });
+
+      $('.towe-b-slider').slick({
+        arrows: true,
+        autoplay:true,
+        lazyLoad: 'ondemand',
+        dots: false,
+        autoplaySpeed: 5000,
+        speed: 1000,  
+        asNavFor:'.specInfoSlider2',    
+        prevArrow:'#tower-b-prev',
+        nextArrow:'#tower-b-next',   
+      });
+
+      $('.amenities-slider-1').slick({
+        arrows: false,
+        autoplay:true,
+        lazyLoad: 'ondemand',
+        dots: false,
+        autoplaySpeed: 5000,
+        speed: 1000,      
+        asNavFor: '.amenities-slider-2',
+        prevArrow:'#ame-prev',
+        nextArrow:'#ame-next', 
+        responsive: [{
+                 breakpoint: 992,
+                 settings: {      
+                   arrows: true,                              
+                 },
+
+               }
+              ]  
+      });
+
+      $('.amenities-slider-2').slick({
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        // rows:10;
+        arrows: false,
+        autoplay:false,
+        vertical: true,
+        focusOnSelect: true,
+        asNavFor: '.amenities-slider-1',
+        lazyLoad: 'ondemand',
+        dots: false,
+        autoplaySpeed: 5000,
+        speed: 1000,   
+      });
+
+
+      if (winWD <= 992) {        
+        $('.galleryImg').each(function() {
+          var src = $(this).attr("src");
+          $(this).attr("src", src.replace(/\.webp$/i, "-mob.webp"));
+        });
+      }
+
+
+      jQuery(".phoneVal").on("keypress", function (evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
+    });
+    jQuery(".phoneVal").on("keyup", function (event) {
+        var mobval=parseInt(jQuery(".phoneVal").val().substr(0,2));
+        var mobvalfirstdigit=parseInt(jQuery(".phoneVal").val().substr(0,1));
+        if (mobval<60 && mobvalfirstdigit!=6 && mobvalfirstdigit!=7 && mobvalfirstdigit!=8 && mobvalfirstdigit!=9) {
+            jQuery(".phoneVal").val("");
+            return false;
+        }
+    });
 
 
       });

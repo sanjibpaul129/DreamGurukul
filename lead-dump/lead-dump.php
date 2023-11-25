@@ -4,7 +4,7 @@ $servername = "localhost";
 // $username = "root_user";
 // $password = "";
 $username = "root";
-$password = "Apple123!@#";
+$password = "Passw0rd123#$";
 $dbname = "jaingroup_enquirydb";
 
 // Create connection

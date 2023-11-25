@@ -26,7 +26,7 @@
 			<div class="col-12">
 				<div class="footer-bottom col-12">
 					<div class="rera col-8 col-xs-12">
-						<p>© <span id="year"></span> - All Rights Reserved | <br class="visible-xs"><span class="bold">Marketed By <a href="https://beyondwalls.com" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="BeyondWalls">BeyondWalls</a></span> | <br class="visible-xs"><a href="https://dreamgurukul.in/privacy-policy.php" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="Privacy Policy">Privacy Policy</a></p>
+						<p>© <span id="year"></span> - All Rights Reserved | <br class="visible-xs"><span class="bold">Marketed By <a href="https://beyondwalls.com" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="BeyondWalls">BeyondWalls</a></span> | <br class="visible-xs"><a href="privacy-policy.php" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="Privacy Policy">Privacy Policy</a></p>
 					</div>
 					<div class="marketed col-4 col-xs-12">
 						<!-- <p><span class="bold">Marketed By <a href="https://beyondwalls.com" target="_blank" class="text-brown" data-event-category="Footer" data-event-action="Click" data-event-name="BeyondWalls">BeyondWalls</a></span></p> -->
@@ -79,13 +79,19 @@
 						var phone = $("#phone").val();
 						trackecommerce_ga4("G-KKJGBYLED8", "", "Jain Group", email.replace(/\*|/g, ''), phone.replace(/\*|/g, ''));
 						$('#enquiryForm').hide();
-						if (download_brochure == 1) {
-							var link = document.createElement('a');
-							link.href = "./assets/images/Jain_Group_Dream_Gurukul_Brochure.pdf";
-							link.download = "Jain_Group_Dream_Gurukul_Brochure.pdf";
-							link.click();
-						} else {
-							window.location.href = "thankyou.php";
+						$('.cont-desc').hide();
+						$('#enquirySuccess').show();
+						if (respond_message != "") {
+
+
+							if (download_brochure == 1) {
+								var link = document.createElement('a');
+								link.href = "./assets/images/Jain_Group_Dream_Gurukul_Brochure.pdf";
+								link.download = "Jain_Group_Dream_Gurukul_Brochure.pdf";
+								link.click();
+							} else {
+									window.location.href = "thankyou.php";
+							}
 						}
 					},
 					error: function(respond_message) {}
