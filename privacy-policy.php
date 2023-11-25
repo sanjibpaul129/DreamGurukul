@@ -1,4 +1,7 @@
 <?php include "header.php" ?>
+<style>
+    p{margin-bottom:20px}
+</style>
 <section class="sec2 padding lazy" data-src="assets/images/sec2bg.webp">
     <div class="container">
         <div class="row">

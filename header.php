@@ -44,6 +44,7 @@
 				<input type="hidden" name="utmcampaign" class="utmCampaign" value="<?php echo $_GET['utm_campaign']; ?>">
 				<input type="hidden" name="utmmedium" class="utmMedium" value="<?php echo $_GET['utm_medium']; ?>">
 				<input type="hidden" name="utmterm" class="utmTerm" value="<?php echo $_GET['utm_term']; ?>">
+
 				<div class="col-12 pos-rel">
 					<input class="full iptxt" onkeydown="return /[a-z, ]/i.test(event.key)" type="text" id="sname" name="fullname" placeholder="Full Name*" required>
 				</div>
@@ -56,21 +57,8 @@
 				<div class="col-12 pos-rel">
 					<input class="full" name="comments" type="textarea" placeholder="Comments"><br class="hidden-xs">
 				</div>
-				<!-- <div class="col-12">
-                <select id="course" class="full" name="class" required>
-                    <option name="class" value="">Select Class*</option>
-                    <option name="class" value="Course">Nursury</option>
-                    <option name="class" value="Course">LKG</option>
-                    <option name="class" value="Course">UKG</option>
-                    <option name="class" value="Course">Standard 1</option>
-                    <option name="class" value="Course">Standard 2</option>
-                    <option name="class" value="Course">Standard 3</option>
-                    <option name="class" value="Course">Standard 4</option>
-                    <option name="class" value="Course">Standard 5</option>
-                    <option name="class" value="Course">Standard 6</option>
-                </select><br class="hidden-xs">
-            </div> -->
-				<input type="submit" class="enquire-btn-now submit-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
+
+				<input type="submit" class="enquire-btn-now submit-btn theme-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
 			</form>
 			<div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
 		</div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="assets/images/close.webp" alt="Overview"></a>
