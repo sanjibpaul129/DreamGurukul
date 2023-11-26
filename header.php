@@ -15,7 +15,7 @@
 	<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>" />
 	<!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
 	<link rel="stylesheet" href="assets/css/all.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJGBYLED8"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -41,11 +41,10 @@
 			<div class="cont-desc">Enquiry Form</div>
 			<!-- <form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate> -->
 			<form data-toggle="validator" action="enquiry_form_submit.php" id="enquire_now" method="post" class="contact-form enquire-form">
-				<!-- <input type="hidden" name="utmsource" class="utmSource" value="<?php echo $_GET['utm_source']; ?>">
-				<input type="hidden" name="utmcampaign" class="utmCampaign" value="<?php echo $_GET['utm_campaign']; ?>">
-				<input type="hidden" name="utmmedium" class="utmMedium" value="<?php echo $_GET['utm_medium']; ?>">
-				<input type="hidden" name="utmterm" class="utmTerm" value="<?php echo $_GET['utm_term']; ?>"> -->
 				<input id="utm_source" name="utm_source" type="hidden" value="">
+				<input id="utm_campaign" name="utm_campaign" type="hidden" value="">
+				<input id="utm_medium" name="utm_medium" type="hidden" value="">
+    			<input id="utm_term" name="utm_term" type="hidden" value="">
 				<input id="network" name="network" type="hidden" value="">
 				<input id="campaign_id" name="campaign_id" type="hidden" value="">
 				<input id="adgroup_id" name="adgroup_id" type="hidden" value="">
@@ -83,6 +82,9 @@
 	                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 	            }
 	            var utm_source = getParameterByName('utm_source');
+    	        var utm_campaign = getParameterByName('utm_campaign');
+    	        var utm_medium = getParameterByName('utm_medium');
+    	        var utm_term = getParameterByName('utm_term');
 	            var network = getParameterByName('network');
 	            var campaign_id = getParameterByName('campaign_id');
 	            var adgroup_id = getParameterByName('adgroup_id');
@@ -99,6 +101,9 @@
 	            var mobile = getParameterByName('mobile');
 
 	            document.getElementById("utm_source").value = utm_source.toString();
+	            document.getElementById("utm_campaign").value = utm_campaign.toString();
+    	        document.getElementById("utm_medium").value = utm_medium.toString();
+    	        document.getElementById("utm_term").value = utm_term.toString();
 	            document.getElementById("network").value = network.toString();
 	            document.getElementById("campaign_id").value = campaign_id.toString();
 	            document.getElementById("adgroup_id").value = adgroup_id.toString();
