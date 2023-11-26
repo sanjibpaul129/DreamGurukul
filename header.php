@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<!-- <meta name="google-site-verification" content="pMvw1LWBc2hcmhpIV15Wl3Fr2zo4NiJwnL_cQm3O9gI" /> -->
 	<link rel="icon" href="assets/images/favicon.webp" disabled />
-	<title>Dream Gurukul: Buy 3 BHK Flats in Madhyamgram, Kolkata</title>
-	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale in Madhyamgram Kolkata near airport to enhance lifestyle of your kids for a bright future." />
+	<title>Dream Gurukul: Buy 3 BHK Flats near Airport, Kolkata</title>
+	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale near the airport, to enhance lifestyle of your kids for a bright future."  />
 	<meta name="keywords" content="Dream Gurukul" />
 	<!-- <link rel="dns-prefetch" href="https://use.typekit.net/">
 	<link rel="preconnect" href="https://use.typekit.net/"> -->
