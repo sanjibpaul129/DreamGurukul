@@ -40,7 +40,7 @@
 		<div class="form-wrap" id="">
 			<div class="cont-desc">Enquiry Form</div>
 			<!-- <form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate> -->
-			<form data-toggle="validator" action="enquiry_form_submit.php" id="enquire_now" method="post" >
+			<form data-toggle="validator" action="enquiry_form_submit.php" id="enquire_now" method="post" class="contact-form enquire-form">
 				<!-- <input type="hidden" name="utmsource" class="utmSource" value="<?php echo $_GET['utm_source']; ?>">
 				<input type="hidden" name="utmcampaign" class="utmCampaign" value="<?php echo $_GET['utm_campaign']; ?>">
 				<input type="hidden" name="utmmedium" class="utmMedium" value="<?php echo $_GET['utm_medium']; ?>">
