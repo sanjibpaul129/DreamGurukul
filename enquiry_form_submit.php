@@ -32,16 +32,5 @@
     );
     $context  = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
-
-    // $servername = "localhost";
-    // $username = "root";
-    // $password = "Apple123!@#";
-    // $dbname = "jaingroup_enquirydb";
-    // $conn = new mysqli($servername, $username, $password, $dbname);
-    // if ($conn->connect_error) {
-    //     die("Connection failed: " . $conn->connect_error);
-    // }
-    // $query = "INSERT INTO `enquiries`(`name`, `email`, `phone`, `comments`, `utmsource`, `utmcampaign`, `utmmedium`, `utmterm`) VALUES ('" . $_POST["fullname"] . "','" . $_POST["email"] . "','" . $_POST["phone"] . "','" . $_POST["comments"] . "','" . $_POST["utmsource"] . "','" . $_POST["utmcampaign"] . "','" . $_POST["utmmedium"] . "','" . $_POST["utmterm"] . "')";
-    // $conn->query($query);
     header('Location: thankyou.php?email=' . $email . "&contact=" . $contact);
 ?>
