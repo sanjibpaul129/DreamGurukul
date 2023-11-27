@@ -67,9 +67,9 @@
     <i class="fa fa-envelope" aria-hidden="true" style="color: #000; font-size: 31px;"></i>
     </a>
     <br><br>
-    <button id="shareBtn" style="display: none;">
+    <!-- <button id="shareBtn" style="display: none;">
       <i class="fa fa-share-alt" aria-hidden="true" style="color: #000; font-size: 31px;"></i>
-    </button><br><br>
+    </button><br><br> -->
   </div>
 
   <div>
@@ -249,7 +249,7 @@
       }
     });
     </script>
-    <script>
+    <!-- <script>
       const shareButton = document.getElementById('shareBtn');
 
       if (navigator.share) {
@@ -257,8 +257,6 @@
         shareButton.addEventListener('click', async () => {
           try {
             await navigator.share({
-              title: 'Dream Gurukul Brochure',
-              // text: 'Your text here',
               url: params
             });
             console.log('Shared successfully');
@@ -269,7 +267,7 @@
       } else {
         shareButton.style.display = 'none'; 
       }
-    </script>
+    </script> -->
 </body>
 
 </html>
