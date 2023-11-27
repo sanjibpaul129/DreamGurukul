@@ -13,12 +13,11 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-xs-12 " style="height: 50vh;">
                 <h2 class="text-reg text-center">
-                   
                     <div class="sec-subdesc text-center" style="display: block;"><span>Thankyou!</span></div>
                 </h2>
                 <h3>
-                    <p class="sec-desc text-center" >Your response has been received.
-
+                    <p class="sec-desc text-center" >
+                        Your submission is received and we will contact you soon. To download brochure <a style="color: Gray; font-weight: 700;" href="https://onedrive.live.com/download?resid=3F3CF1D351D4BABC%21758&authkey=!AOKd29YXCl26os0&em=2">click here</a>
                     </p>
                         <input type="button" class="enquire-btn-now submit-btn theme-btn text-center" id="go-home" value="Home" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form" >
                     <br>

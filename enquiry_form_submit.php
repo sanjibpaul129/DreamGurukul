@@ -6,6 +6,9 @@
     $project = "Dream Gurukul";
     $utm_form_name = "Enquiry Form";
     $utm_source = $_POST["utm_source"];
+    $utm_campaign = $_POST["utm_campaign"];
+    $utm_medium = $_POST["utm_medium"];
+    $utm_term = $_POST["utm_term"];
     $network = $_POST["network"];
     $campaign_id = $_POST["campaign_id"];
     $adgroup_id = $_POST["adgroup_id"];
@@ -22,7 +25,7 @@
     $mobile = $_POST["mobile"];
     $apikey = "kG6vgYgUqEmnHUtHX15pNQ";
     $url = 'https://www.realtybucket.com/webhook/website_form_data';
-    $data = array('apikey' => $apikey, 'name' => $name, 'email' => $email, 'contact' => $contact, 'comments' => $comments, 'project' => $project, 'utm_form_name' => $utm_form_name, 'utm_source' => $utm_source, 'network' => $network, 'campaign_id' => $campaign_id, 'adgroup_id' => $adgroup_id, 'gclid' => $gclid, 'device' => $device, 'creative' => $creative, 'placement' => $placement, 'target_id' => $target_id, 'loc_interest_ms' => $loc_interest_ms, 'loc_physical_ms' => $loc_physical_ms, 'device_model' => $device_model, 'keyword' => $keyword, 'match_type' => $match_type, 'mobile' => $mobile);
+    $data = array('apikey' => $apikey, 'name' => $name, 'email' => $email, 'contact' => $contact, 'comments' => $comments, 'project' => $project, 'utm_form_name' => $utm_form_name, 'utm_source' => $utm_source, 'utm_campaign' => $utm_campaign, 'utm_medium' => $utm_medium, 'utm_term' => $utm_term, 'network' => $network, 'campaign_id' => $campaign_id, 'adgroup_id' => $adgroup_id, 'gclid' => $gclid, 'device' => $device, 'creative' => $creative, 'placement' => $placement, 'target_id' => $target_id, 'loc_interest_ms' => $loc_interest_ms, 'loc_physical_ms' => $loc_physical_ms, 'device_model' => $device_model, 'keyword' => $keyword, 'match_type' => $match_type, 'mobile' => $mobile);
     $options = array(
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
@@ -32,16 +35,5 @@
     );
     $context  = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
-
-    // $servername = "localhost";
-    // $username = "root";
-    // $password = "Apple123!@#";
-    // $dbname = "jaingroup_enquirydb";
-    // $conn = new mysqli($servername, $username, $password, $dbname);
-    // if ($conn->connect_error) {
-    //     die("Connection failed: " . $conn->connect_error);
-    // }
-    // $query = "INSERT INTO `enquiries`(`name`, `email`, `phone`, `comments`, `utmsource`, `utmcampaign`, `utmmedium`, `utmterm`) VALUES ('" . $_POST["fullname"] . "','" . $_POST["email"] . "','" . $_POST["phone"] . "','" . $_POST["comments"] . "','" . $_POST["utmsource"] . "','" . $_POST["utmcampaign"] . "','" . $_POST["utmmedium"] . "','" . $_POST["utmterm"] . "')";
-    // $conn->query($query);
     header('Location: thankyou.php?email=' . $email . "&contact=" . $contact);
 ?>
