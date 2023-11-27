@@ -67,12 +67,12 @@
     <i class="fa fa-envelope" aria-hidden="true" style="color: #000; font-size: 31px;"></i>
     </a>
     <br><br>
-    <button id="shareBtn">
+      <a>
+      <i id="shareIcon" class="fa fa-share-alt" aria-hidden="true" style="color: #000; font-size: 31px; cursor: pointer;"></i>
+      </a>
+    <!-- <button id="shareBtn">
       <i class="fa fa-share-alt" aria-hidden="true" style="color: #000; font-size: 31px;"></i> Share
-    </button>
-    <!-- <button id="shareBtn" style="display: none;">
-      <i class="fa fa-share-alt" aria-hidden="true" style="color: #000; font-size: 31px;"></i>
-    </button><br><br> -->
+    </button> -->
   </div>
 
   <div>
@@ -253,6 +253,27 @@
     });
     </script>
     <script>
+      const shareIcon = document.getElementById('shareIcon');
+      const currentURL = window.location.href;
+    
+      if (navigator.share) {
+        shareIcon.style.display = 'block';
+        shareIcon.addEventListener('click', async () => {
+          try {
+            await navigator.share({
+              url: currentURL
+            });
+            console.log('Shared successfully');
+          } catch (error) {
+            console.error('Error sharing:', error);
+          }
+        });
+      } else {
+        shareIcon.style.display = 'none';
+      }
+    </script>
+    
+    <!-- <script>
       const shareButton = document.getElementById('shareBtn');
       const currentURL = window.location.href;
     
@@ -271,26 +292,8 @@
       } else {
         shareButton.style.display = 'none';
       }
-    </script>
-    <!-- <script>
-      const shareButton = document.getElementById('shareBtn');
-
-      if (navigator.share) {
-        shareButton.style.display = 'block'; 
-        shareButton.addEventListener('click', async () => {
-          try {
-            await navigator.share({
-              url: params
-            });
-            console.log('Shared successfully');
-          } catch (error) {
-            console.error('Error sharing:', error);
-          }
-        });
-      } else {
-        shareButton.style.display = 'none'; 
-      }
     </script> -->
+    
 </body>
 
 </html>
