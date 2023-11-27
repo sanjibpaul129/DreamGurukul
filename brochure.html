@@ -250,25 +250,36 @@
     });
     </script>
     <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const ogTitle = 'Dream Gurukul Brochure';
+        const ogDescription = 'Your description here.';
+        const currentURL = window.location.href;
+        const imageUrl = 'https://dreamgurukul.in/images/xyz.jpg?w=200'; // Replace with your image URL
+  
+        // Update Open Graph meta tags with dynamic values
+        document.querySelector('meta[property="og:title"]').setAttribute('content', ogTitle);
+        document.querySelector('meta[property="og:description"]').setAttribute('content', ogDescription);
+        document.querySelector('meta[property="og:url"]').setAttribute('content', currentURL);
+        document.querySelector('meta[property="og:image"]').setAttribute('content', imageUrl);
+      });
+  
+      // Script for sharing using Web Share API
       const shareButton = document.getElementById('shareBtn');
-
-      if (navigator.share) {
-        shareButton.style.display = 'block'; 
-        shareButton.addEventListener('click', async () => {
-          try {
-            await navigator.share({
-              title: 'Dream Gurukul Brochure',
-              // text: 'Your text here',
-              url: 'https://dreamgurukul.in/brochure.html'
-            });
-            console.log('Shared successfully');
-          } catch (error) {
-            console.error('Error sharing:', error);
-          }
-        });
-      } else {
-        shareButton.style.display = 'none'; 
-      }
+  
+      shareButton.addEventListener('click', async () => {
+        const shareData = {
+          title: 'Dream Gurukul Brochure',
+          // text: 'Your description here.',
+          url: window.location.href,
+        };
+  
+        try {
+          await navigator.share(shareData);
+          console.log('Shared successfully');
+        } catch (error) {
+          console.error('Error sharing:', error);
+        }
+      });
     </script>
 </body>
 
