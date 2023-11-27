@@ -66,6 +66,10 @@
     <a href="mailto:" id="click_to_email" style="display: none;">
     <i class="fa fa-envelope" aria-hidden="true" style="color: #000; font-size: 31px;"></i>
     </a>
+    <br><br>
+    <button id="shareBtn" style="display: none;">
+      <i class="fa fa-share-alt" aria-hidden="true" style="color: #000; font-size: 31px;"></i>
+    </button><br><br>
   </div>
 
   <div>
@@ -244,6 +248,28 @@
         document.getElementById('click_to_email').style.display = "none";
       }
     });
+    </script>
+    <script>
+      const shareButton = document.getElementById('shareBtn');
+
+      if (navigator.share) {
+        shareButton.style.display = 'block'; // Show the button if Web Share API is supported
+
+        shareButton.addEventListener('click', async () => {
+          try {
+            await navigator.share({
+              title: 'Drem Gurukul',
+              text: 'Your text here',
+              url: 'https://dreamgurukul.in' // Replace with your website URL
+            });
+            console.log('Shared successfully');
+          } catch (error) {
+            console.error('Error sharing:', error);
+          }
+        });
+      } else {
+        shareButton.style.display = 'none'; // Hide the button if Web Share API is not supported
+      }
     </script>
 </body>
 
