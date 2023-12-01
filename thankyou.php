@@ -8,18 +8,19 @@
         cursor: pointer;
     }
 </style>
-<section class="sec2 padding lazy" data-src="assets/images/sec2bg.webp">
+<section class="sec2 padding minh100 sec2-bg">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-xs-12 " style="height: 50vh;">
                 <h2 class="text-reg text-center">
+                   
                     <div class="sec-subdesc text-center" style="display: block;"><span>Thankyou!</span></div>
                 </h2>
                 <h3>
-                    <p class="sec-desc text-center" >
-                        Your submission is received and we will contact you soon. To download brochure <a style="color: Gray; font-weight: 700;" href="https://onedrive.live.com/download?resid=3F3CF1D351D4BABC%21758&authkey=!AOKd29YXCl26os0&em=2">click here</a>
+                    <p class="sec-desc text-center" >Your response has been received.
+
                     </p>
-                        <input type="button" class="enquire-btn-now submit-btn theme-btn text-center" id="go-home" value="Home" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form" >
+                        <input type="button" class="enquire-btn-now submit-btn text-center" id="go-home" value="Home" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form" >
                     <br>
                     
                 </h3>
@@ -31,6 +32,8 @@
         
     </div>
 </section>
+<iframe src="https://trk.rythmworld.in/pixel?adid=6565eaf5d938ff71b771907d" scrolling="no" frameborder="0" width="1" height="1" style="display:none;"></iframe>
+<iframe src="https://adgebra.co.in/Tracker/Conversion?p1=6904&p2=[order_Id]&p3=[product_Id]&p4=[cartvalue]&p5=[flag~custom_values]"width="0" height="0" frameborder="0"></iframe>
 <?php include 'footer.php' ?>
 
 <script>
