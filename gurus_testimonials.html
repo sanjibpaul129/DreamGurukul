@@ -2,16 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-K542CGGV');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Gallery</title>
@@ -26,24 +16,26 @@
         }
 
         body {
-            background-image: url("testimonial_images/texture.jpg");
             font-family: Arial, sans-serif;
         }
 
         header {
+            background-image: url("testimonial_images/texture.jpg");
+            background-repeat: no-repeat;
+            background-size: 130%;
             position: fixed;
             display: flex;
             flex-direction: row;
-            background: rgb(255, 255, 255);
             width: 100%;
-            height: 60px;
             top: 0;
             padding: 1.5% 1% 1% 2.5%;
+            z-index: 1;
         }
 
         header img {
             height: 60px;
             margin-right: 32%;
+            mix-blend-mode: multiply;
         }
 
         .jain-group-logo {
@@ -51,21 +43,20 @@
         }
 
         .dream_gurukul_logo {
-            width: 160px;
+            display: none;
         }
 
         .container {
-            background-image: url("testimonial_images/texture.jpg");
+            background-image: url("testimonial_images/texturedark.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             display: flex;
             flex-direction: row;
-            background: transparent;
             margin-top: 100px;
             padding: 0;
         }
 
-        .gurus {
+        .gurus-pic {
             width: 90%;
             margin: 5%;
             display: flex;
@@ -75,64 +66,82 @@
         }
 
         .left-container {
-            background: rgb(172, 128, 103);
-            background: linear-gradient(180deg, rgba(172, 128, 103, 1) 0%, rgba(91, 68, 56, 1) 100%);
-            height: 1000px;
-            width: 30%;
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, 0.2);
+            height: 100%;
+            width: 60%;
+            min-width: 300px;
             border-radius: 20px;
             margin: 1.5% 1.7%;
         }
 
         .left-container h3 {
             color: #f1f1f1;
-            margin: 6% 6%;
+            margin: 6%;
             font-size: medium;
         }
 
         .left-container h2 {
             color: #f1f1f1;
-            margin: 10% 0;
+            margin: 5% 0;
             padding: 0 6%;
         }
 
+        .left-container img {
+            width: 90%;
+        }
+        b{
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+        .guru-description{
+            margin:0 0 6% 0;
+        }
 
         .gallery {
-
             display: flex;
             flex-direction: column;
             padding-top: 1.5%;
+            margin-bottom: 2%;
         }
 
         .gallery h2 {
-            color: black;
-            margin: 1% 0 2% 0.5%;
+            color: white;
+            margin: 1.5% 0 1% 1%;
             top: 2%;
             font-size: 30px;
             font-weight: 700;
         }
 
         .video {
+            background-color: rgba(255, 255, 255, 0.2);
             display: flex;
             flex-direction: row;
+            transition: all 0.3s ease-in-out;
+            backdrop-filter: blur(5px);
+            width: 95%;
+            margin-top: 1%;
+            border-radius: 20px;
+        }
+
+        .video:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
         }
 
         .video p {
-            color: black;
-            font-size: 20px;
+            color: white;
+            font-size: 1.3rem;
             font-weight: 600;
-            margin: 5% 0 5% 2%;
+            margin: 2% 6% 5% 2%;
         }
 
         .gallery img {
-            width: 300px;
+            width: 20%;
+            height: 90%;
             border-radius: 15px;
-            margin: 10px 0;
+            margin: 10px;
             cursor: pointer;
-            transition: filter 0.2s ease-in-out;
-        }
-
-        .gallery img:hover {
-            filter: brightness(90%);
         }
 
         .modal {
@@ -142,7 +151,7 @@
             left: 0;
             top: 0;
             width: 80%;
-            height: 700px;
+            height: 80%;
             margin: 5% 10%;
             border-radius: 20px;
             overflow: auto;
@@ -168,82 +177,171 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+        @media (max-width: 768px) {
+            header img {
+                height: 40px;
+                mix-blend-mode: multiply;
+            }
+
+            .jain-group-logo {
+                width: 110px;
+            }
+
+            .dream_gurukul_logo {
+                display: none;
+            }
+
+            .container {
+                background-image: url("testimonial_images/texturedarkmobile.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                flex-direction: column;
+                margin-top: 35px;
+            }
+
+            .left-container {
+                height: 90%;
+                width: 90%;
+                min-width: 300px;
+                margin: 7% 5%;
+            }
+
+            .left-container h3 {
+                margin: 2% 6%;
+                font-size: 15px;
+            }
+
+            .left-container .description {
+                margin: 6% 0 0 0;
+                padding: 0 6%;
+                font-weight: 600;
+            }
+
+            .gallery {
+                margin: 0 5% 7% 5%;
+            }
+
+            .gallery h2 {
+                margin: 1.5% 0 1% 1%;
+                top: 2%;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .gallery img {
+                width: 30%;
+                height: auto;
+                border-radius: 15px;
+                margin: 10px;
+            }
+
+            .video {
+                width: 100%;
+                margin-top: 1%;
+                border-radius: 20px;
+            }
+
+            .video p {
+                font-size: 13px;
+                font-weight: 600;
+                margin: 5% 6% 5% 2%;
+            }
+
+            .modal {
+                justify-content: center;
+                align-items: center;
+                width: 95%;
+                height: 30%;
+                margin: 2.5%;
+            }
+
+            .modal-content {
+                margin: auto;
+                display: block;
+                margin-top: 3.5%;
+                border-radius: 12px;
+                width: 90%;
+                height: 85%;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 12px;
+                /* even smaller font size for very small screens */
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K542CGGV" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <header>
         <img class="jain-group-logo" src="testimonial_images/jain-group-logo.png" alt="">
         <img class="dream_gurukul_logo" src="testimonial_images/dream_gurukul_logo.png" alt="">
     </header>
     <div class="container">
         <div class="left-container">
-            <img class="gurus" src="testimonial_images/gurus.jpeg" alt="gurus">
+            <img class="gurus-pic" src="testimonial_images/gurus.jpeg" alt="gurus">
             <h2>
                 Dream Gurukul - Testimonials of all the renowned Gurus
             </h2>
-            <h3>Mamata Shankar: A renowned dancer and actress sharing her inspiring journey in a testimonial.</h3>
-            <h3> Bhaichung Bhutia: An iconic Indian footballer recounting his experiences in a testimonial.</h3>
-            <h3>Bhattacharjee: A celebrated artist offering insights into his creative process in the testimonial.</h3>
-            <h3>Ajoy Chakraborty: A master Hindustani classical vocalist reflecting on his musical path in his
-                testimonial.</h3>
+            <h2 class="description">Description</h2>
+            <div class="guru-description">
+                <h3><b>Mamata Shankar</b>: A renowned dancer and actress sharing her inspiring journey in a testimonial.</h3>
+                <h3><b> Bhaichung Bhutia:</b> An iconic Indian footballer recounting his experiences in a testimonial.</h3>
+                <h3><b>Bhattacharjee</b>: A celebrated artist offering insights into his creative process in the testimonial.</h3>
+                <h3><b>Ajoy Chakraborty</b>: A master Hindustani classical vocalist reflecting on his musical path in his testimonial.</h3>
+            </div>
+            </div>
+            <div class="gallery">
+                <h2>Videos</h2>
+                <div class="video" onclick="openModal('https://www.youtube.com/embed/8hINM2aXb8Y')">
+                    <img src="testimonial_images/ajoy.webp" alt="Video 1">
+                    <p>Pt. Ajoy Chakrabarty Shares His Inspirational Journey with Dream Gurukul</p>
+                </div>
+                <div class="video" onclick="openModal('https://www.youtube.com/embed/CMkGlkAq2h4')">
+                    <img src="testimonial_images/bhaichung.webp" alt="Video 2">
+                    <p>Bhaichung Bhutia Shares His Inspirational Journey with Dream Gurukul</p>
+                </div>
+                <div class="video" onclick="openModal('https://www.youtube.com/embed/bw9ugX0cgE4')">
+                    <img src="testimonial_images/mamata.webp" alt="Video 3">
+                    <p>Mamata Shankar Shares His Inspirational Journey with Dream Gurukul</p>
+                </div>
+                <div class="video" onclick="openModal('https://www.youtube.com/embed/vrWssxkhxXg')">
+                    <img src="testimonial_images/subhaprasanna.webp" alt="Video 4">
+                    <p>Subhaprasanna Battacharjee Shares His Inspirational Journey with Dream Gurukul</p>
+                </div>
+                <div class="video" onclick="openModal('https://www.youtube.com/embed/4bWFJfU5AYg')">
+                    <img src="testimonial_images/gurus.jpeg" alt="Video 5">
+                    <p>Take a Virtual Tour of Dream Gurukul: Homes Designed To Make Your Child The Next Superstar🏠⚽🎨🎵
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="gallery">
-            <h2>Videos</h2>
-            <div class="video">
-                <img src="testimonial_images/ajoy.webp" alt="Video 1"
-                    onclick="openModal('https://www.youtube.com/embed/8hINM2aXb8Y')">
-                <p>Pt. Ajoy Chakrabarty Shares His Inspirational Journey with Dream Gurukul</p>
-            </div>
-            <div class="video">
-                <img src="testimonial_images/bhaichung.webp" alt="Video 2"
-                    onclick="openModal('https://www.youtube.com/embed/CMkGlkAq2h4')">
-                <p>Bhaichung Bhutia Shares His Inspirational Journey with Dream Gurukul</p>
-            </div>
-            <div class="video">
-                <img src="testimonial_images/mamata.webp" alt="Video 3"
-                    onclick="openModal('https://www.youtube.com/embed/bw9ugX0cgE4')">
-                <p>Mamata Shankar Shares His Inspirational Journey with Dream Gurukul</p>
-            </div>
-            <div class="video">
-                <img src="testimonial_images/subhaprasanna.webp" alt="Video 4"
-                    onclick="openModal('https://www.youtube.com/embed/vrWssxkhxXg')">
-                <p>Subhaprasanna Battacharjee Shares His Inspirational Journey with Dream Gurukul</p>
-            </div>
-            <div class="video">
-                <img src="testimonial_images/gurus.jpeg" alt="Video 5"
-                    onclick="openModal('https://www.youtube.com/embed/4bWFJfU5AYg')">
-                <p>Take a Virtual Tour of Dream Gurukul: Homes Designed To Make Your Child The Next Superstar🏠⚽🎨🎵</p>
-            </div>
-        </div>
-    </div>
 
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <iframe class="modal-content" id="video01" title="YouTube video player" allowfullscreen></iframe>
-    </div>
-    <script>function openModal(videoUrl) {
-            document.getElementById('video01').src = videoUrl;
-            document.getElementById('myModal').style.display = "block";
-        }
-        var modal = document.getElementById('myModal');
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function () {
-            modal.style.display = "none";
-            document.getElementById('video01').src = "";
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <iframe class="modal-content" id="video01" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <script>function openModal(videoUrl) {
+                document.getElementById('video01').src = videoUrl;
+                document.getElementById('myModal').style.display = "block";
+            }
+            var modal = document.getElementById('myModal');
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function () {
                 modal.style.display = "none";
                 document.getElementById('video01').src = "";
             }
-        }
-    </script>
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    document.getElementById('video01').src = "";
+                }
+            }
+        </script>
 </body>
 
 </html>
