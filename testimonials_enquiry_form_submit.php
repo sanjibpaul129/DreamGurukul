@@ -1,7 +1,7 @@
 <?php
-    $name = $_POST["fullname"];
+    $name = $_POST["name"];
     $email = $_POST["email"];
-    $mobile = $_POST["phone"];
+    $mobile = $_POST["mobile"];
     $comments = $_POST["comments"];
     $project = "Dream Gurukul";
     $utm_form_name = "Enquiry Form";
@@ -27,9 +27,9 @@
     echo "================";
     echo $apikey;
     echo "================";
-    
+
     $url = 'https://www.realtybucket.com/webhook/website_form_data';
-    $data = array('apikey' => $apikey, 'name' => $name, 'email' => $email,'mobile' => $phone, 'comments' => $comments, 'project' => $project, 'utm_form_name' => $utm_form_name, 'utm_source' => $utm_source,'utm_medium' => $utm_medium);
+    $data = array('apikey' => $apikey, 'name' => $name, 'email' => $email,'mobile' => $mobile,'comments' => $comments, 'project' => $project, 'utm_form_name' => $utm_form_name, 'utm_source' => $utm_source,'utm_medium' => $utm_medium);
     $options = array(
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
