@@ -196,21 +196,7 @@
             cursor: pointer;
         }
 
-        .enquiry-button {
-            background-color: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(10px);
-            color: white;
-            width: 38%;
-            position: fixed;
-            align-items: right;
-            top: 90%;
-            left: 57%;
-            bottom: 4%;
-            padding: 3% 4%;
-            font-size: 17px;
-            border: 2px solid white;
-            border-radius: 10px;
-        }
+
 
         .form-container {
             display: none;
@@ -295,28 +281,42 @@
             backdrop-filter: blur(5px);
         }
 
-        footer {
-            background-image: url("testimonial_images/texture.jpg");
-            background-repeat: no-repeat;
-            background-size: 130%;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            padding: 1.5% 1% 1% 2.5%;
-            z-index: 10;
+        .enquiry-button {
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            color: white;
+            width: 120px;
+            padding: 10% 5%;
+            font-size: 17px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-top: 1%;
         }
 
 
         .fixed-icons {
+            background-image: url("testimonial_images/texture.jpg");
+            background-repeat: no-repeat;
+            background-size: 130%;
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            position: fixed;
+            bottom: 0;
+            justify-content: space-around;
+            width: 100%;
+            height: 55px;
+            padding-top: 1%;
+            margin-left: 1.5%;
+
+            /* border: 2px solid red; */
         }
 
-        .fixed-icons a {
-            margin: 0 10px;
-            /* Adjust spacing between icons */
+        .whatsapp_icon , .call_icon{
+            margin-top: 1%;
+        }
+
+        .call_icon {
+            margin-left: 2%;
         }
 
         /* Rest of your CSS */
@@ -463,28 +463,27 @@
                 <p>Walkthrough Video</p>
             </div>
         </div>
-        <footer>
-            <div class="fixed-icons">
-                <div class="whatsapp_icon">
-                    <a href="https://wa.me/9330290724" id="click_to_whatsapp" target="_blank">
-                        <i class="fa fa-whatsapp" aria-hidden="true" style="color: #000000; font-size: 44px;"></i>
-                    </a>
-                </div>
-                <div class="enquire">
-                    <button class="enquiry-button">Enquire now</button>
-                </div>
-                <div class="call_icon">
-                    <a href="tel:9513436936" id="click_to_call">
-                        <i class="fa fa-phone" aria-hidden="true" style="color: #000; font-size: 44px;"></i>
-                    </a>
-                </div>
+        <div class="fixed-icons">
+            <div class="whatsapp_icon">
+                <a href="https://wa.me/9330290724" id="click_to_whatsapp" target="_blank">
+                    <i class="fa fa-whatsapp" aria-hidden="true" style="color: #000000; font-size: 44px;"></i>
+                </a>
             </div>
-        </footer>
+            <div class="enquire">
+                <button class="enquiry-button">Enquire now</button>
+            </div>
+            <div class="call_icon">
+                <a href="tel:9513436936" id="click_to_call">
+                    <i class="fa fa-phone" aria-hidden="true" style="color: #000; font-size: 44px;"></i>
+                </a>
+            </div>
+        </div>
 
         <div class="form-container">
             <h1>Enquiry Form</h1>
             <button class="closeForm">&times;</button>
-            <form data-toggle="validator" action="test_form_submit.php" id="contactForm" method="post" class="form_background">
+            <form data-toggle="validator" action="testimonials_enquiry_form_submit.php" id="contactForm" method="post"
+                class="form_background">
                 <input id="utm_source" name="utm_source" type="hidden" value="">
                 <input id="utm_medium" name="utm_medium" type="hidden" value="">
                 <input type="text" id="name" placeholder="Name" name="name"><br>
