@@ -70,7 +70,7 @@
             background-size: cover;
             display: flex;
             flex-direction: row;
-            margin-top: 100px;
+            margin: 100px 0 59px 0;
             padding: 0;
         }
 
@@ -282,7 +282,8 @@
         }
 
         .enquiry-button {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgb(184,141,51);
+            /* background-color: rgba(0, 0, 0, 0.7); */
             backdrop-filter: blur(10px);
             color: white;
             width: 120px;
@@ -291,6 +292,7 @@
             border: 2px solid white;
             border-radius: 10px;
             margin-top: 1%;
+            /* color: #b88d33; */
         }
 
 
@@ -317,7 +319,9 @@
 
         .call_icon {
             margin-left: 2%;
+           
         }
+
 
         /* Rest of your CSS */
 
@@ -437,7 +441,7 @@
         <div class="left-container">
             <img class="gurus-pic" src="testimonial_images/gurus.jpeg" alt="gurus">
             <h2>
-                Dream Gurukul - Testimonials of all the renowned Gurus
+                Testimonials of all the Gurus
             </h2>
         </div>
         <div class="gallery">
@@ -466,7 +470,7 @@
         <div class="fixed-icons">
             <div class="whatsapp_icon">
                 <a href="https://wa.me/9330290724" id="click_to_whatsapp" target="_blank">
-                    <i class="fa fa-whatsapp" aria-hidden="true" style="color: #000000; font-size: 44px;"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true" style="color: #1d5c44; font-size: 44px;"></i>
                 </a>
             </div>
             <div class="enquire">
@@ -474,7 +478,7 @@
             </div>
             <div class="call_icon">
                 <a href="tel:9513436936" id="click_to_call">
-                    <i class="fa fa-phone" aria-hidden="true" style="color: #000; font-size: 44px;"></i>
+                    <i class="fa fa-phone" aria-hidden="true" style="color: #1d5c44; font-size: 44px;"></i>
                 </a>
             </div>
         </div>
