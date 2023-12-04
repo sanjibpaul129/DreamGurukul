@@ -497,13 +497,13 @@
         document.querySelector('.enquiry-button').addEventListener('click', function () {
             document.querySelector('.form-container').style.display = 'block';
             document.querySelector('.enquiry-button').style.display = 'none';
-            document.body.style.overflow = 'hidden'; // Disable scrolling
+            document.querySelector('.fixed-icons').style.display = 'none';
         });
 
         document.querySelector('.closeForm').addEventListener('click', function () {
             document.querySelector('.form-container').style.display = 'none';
             document.querySelector('.enquiry-button').style.display = 'block';
-            document.body.style.overflow = ''; // Re-enable scrolling
+            document.querySelector('.fixed-icons').style.display = 'block';
         });
 
 
