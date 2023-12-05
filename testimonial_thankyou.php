@@ -1,3 +1,6 @@
+<html>
+<body>
+		
 <style>
     .sticky-btn,.white_content,.black_overlay{
         display: none!important;
