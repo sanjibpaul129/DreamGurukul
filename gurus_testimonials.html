@@ -532,7 +532,12 @@
         }
         document.querySelector('.enquiry-button').addEventListener('click', function () {
             document.querySelector('.form-container').style.display = 'block';
+            window.scrollTo({
+            top: 0, // Scroll to the top of the window
+            left: 0,
+            behavior: 'smooth'
         });
+    });
 
         document.querySelector('.closeForm').addEventListener('click', function () {
             document.querySelector('.form-container').style.display = 'none';
@@ -555,5 +560,4 @@
         });
     </script>
 </body>
-
 </html>
