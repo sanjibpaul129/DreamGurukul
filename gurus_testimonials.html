@@ -495,7 +495,7 @@
             <button class="closeForm">&times;</button>
             <form class="form" data-toggle="validator" action="testimonials_enquiry_form_submit.php" id="contactForm"
                 method="post" class="form_background">
-                <input id="utm_source" name="utm_source" type="hidden" value="">
+                <input id="utm_source" name="utm_source" type="hidden" value="NewsPaper">
                 <input id="utm_medium" name="utm_medium" type="hidden" value="">
                 <input type="text" id="name" placeholder="Name" name="name"><br>
                 <input type="email" id="email" placeholder="Email" name="email"><br>
@@ -543,7 +543,6 @@
             document.querySelector('.form-container').style.display = 'none';
         });
 
-
     </script>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
@@ -552,10 +551,8 @@
                 var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
                     results = regex.exec(location.search);
                 return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-            }
-            var utm_source = getParameterByName('utm_source');
+            }         
             var utm_medium = getParameterByName('utm_medium');
-            document.getElementById("utm_source").value = utm_source.toString();
             document.getElementById("utm_medium").value = utm_medium.toString();
         });
     </script>
