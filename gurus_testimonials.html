@@ -24,7 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <title>Dream Gurukul</title>
     <style>
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -157,7 +158,7 @@
             font-size: 1.3rem;
             font-weight: 600;
             margin: 2% 6% 5% 2%;
-            letter-spacing: 1px;  
+            letter-spacing: 1px;
         }
 
         .gallery img {
@@ -201,39 +202,55 @@
             cursor: pointer;
         }
 
+        .no-scroll {
+            overflow: hidden;
+        }
 
 
         .form-container {
             display: none;
-            position: absolute;
+            position: fixed;
+            padding-top: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
             height: 100vh;
-            padding: 35% 0;
             background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
+            opacity: 0;
+            transition: opacity 5s ease;
+            z-index: 2;
+        }
 
+        .form-container.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .blur-background {
+            filter: blur(5px);
         }
 
         .closeForm {
             position: absolute;
-            top: 10%;
             right: 35px;
             background: transparent;
             border: none;
             color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
+            font-size: 60px;
             cursor: pointer;
         }
 
+
         .form-container h1 {
             text-align: center;
-            padding: 0 0 5% 0;
+            padding: 6.5% 0 5% 0;
             color: #f1f1f1;
         }
 
         .form {
-            margin: 0 0 0 7%;
+            margin: 5% 0 0 7%;
             color: black;
         }
 
@@ -270,8 +287,13 @@
             padding: 3% 2%;
             font-size: 15px;
         }
-        #name, #email, #mobile, #comment, :focus{
-            border: 2px solid #6b351e ;
+
+        #name,
+        #email,
+        #mobile,
+        #comment,
+        :focus {
+            border: 2px solid #6b351e;
         }
 
         .form-submit {
@@ -291,7 +313,6 @@
 
         .enquiry-button {
             background-color: #6b351e;
-            /* background-color: rgba(0, 0, 0, 0.7); */
             backdrop-filter: blur(10px);
             color: #f9edd8;
             width: 120px;
@@ -301,7 +322,6 @@
             border-radius: 10px;
             margin: 2% 0 0 5%;
         }
-
 
         .fixed-icons {
             background-image: url("testimonial_images/texture.jpg");
@@ -315,8 +335,6 @@
             width: 100%;
             height: 55px;
             padding: 1% 0 0 1.5%;
-
-            /* border: 2px solid red; */
         }
 
         .whatsapp_icon,
@@ -328,10 +346,6 @@
             margin-left: 2%;
 
         }
-
-
-        /* Rest of your CSS */
-
 
         @media (max-width: 768px) {
             header img {
@@ -434,7 +448,6 @@
 </head>
 
 <body>
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K542CGGV" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -531,16 +544,23 @@
             }
         }
         document.querySelector('.enquiry-button').addEventListener('click', function () {
+            var formContainer = document.querySelector('.form-container');
+            formContainer.classList.add('active'); // Show and fade in
             document.querySelector('.form-container').style.display = 'block';
-            window.scrollTo({
-            top: 0, // Scroll to the top of the window
-            left: 0,
-            behavior: 'smooth'
+            document.querySelector('.container').classList.add('blur-background'); // Add blur
+            document.body.classList.add('no-scroll'); // Stop scrolling
         });
-    });
 
         document.querySelector('.closeForm').addEventListener('click', function () {
+            var formContainer = document.querySelector('.form-container');
+            formContainer.classList.remove('active'); // Start fade out
+            formContainer.addEventListener('transitionend', function handler() {
+                formContainer.style.display = 'none'; // Hide after transition ends
+                formContainer.removeEventListener('transitionend', handler);
+            });
             document.querySelector('.form-container').style.display = 'none';
+            document.querySelector('.container').classList.remove('blur-background'); // Remove blur
+            document.body.classList.remove('no-scroll'); // Stop scrolling
         });
 
     </script>
