@@ -24,12 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <title>Dream Gurukul</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
         * {
             margin: 0;
             padding: 0;
-            font-family: 'Josefin Sans', sans-serif;
         }
 
         html {
@@ -75,7 +72,6 @@
             flex-direction: row;
             margin: 100px 0 59px 0;
             padding: 0;
-            letter-spacing: 1px;
         }
 
         .gurus-pic {
@@ -105,8 +101,7 @@
         .left-container h2 {
             color: #f1f1f1;
             margin: 5% 0;
-            text-align: center;
-            font-size: 18px;
+            padding: 0 6%;
         }
 
         .left-container img {
@@ -132,8 +127,7 @@
 
         .gallery h2 {
             color: white;
-            padding: 2% 0 0 0;
-            text-align: center;
+            padding: 2% 0 0 1%;
 
         }
 
@@ -158,7 +152,6 @@
             font-size: 1.3rem;
             font-weight: 600;
             margin: 2% 6% 5% 2%;
-            letter-spacing: 1px;
         }
 
         .gallery img {
@@ -175,12 +168,13 @@
             z-index: 1;
             left: 0;
             top: 0;
-            width: 100%;
+            width: 80%;
             height: 80%;
-            margin: 15% 0;
+            margin: 5% 10%;
             border-radius: 20px;
             overflow: auto;
-            background: transparent;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
         .modal-content {
@@ -188,70 +182,53 @@
             display: block;
             margin-top: 3.5%;
             border-radius: 12px;
-            width: 100%;
+            width: 80%;
             height: 85%;
         }
 
         .close {
             position: absolute;
             top: 15px;
-            right: 15px;
+            right: 35px;
             color: #f1f1f1;
             font-size: 40px;
             font-weight: bold;
             cursor: pointer;
         }
 
-        .no-scroll {
-            overflow: hidden;
-        }
 
 
         .form-container {
             display: none;
-            position: fixed;
-            padding-top: 80%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: absolute;
             width: 100%;
             height: 100vh;
+            padding: 35% 0;
             background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
-            opacity: 0;
-            transition: opacity 5s ease;
-            z-index: 2;
-        }
 
-        .form-container.active {
-            display: block;
-            opacity: 1;
-        }
-
-        .blur-background {
-            filter: blur(5px);
         }
 
         .closeForm {
             position: absolute;
+            top: 10%;
             right: 35px;
-            margin-top: -16%;
             background: transparent;
             border: none;
             color: #f1f1f1;
-            font-size: 60px;
+            font-size: 40px;
+            font-weight: bold;
             cursor: pointer;
         }
 
-
         .form-container h1 {
             text-align: center;
-            padding: 6.5% 0 5% 0;
+            padding: 0 0 5% 0;
             color: #f1f1f1;
         }
 
         .form {
-            margin: 5% 0 0 7%;
+            margin: 0 0 0 5%;
             color: black;
         }
 
@@ -277,6 +254,7 @@
             border: none;
             padding: 1% 2%;
             font-size: 18px;
+            font-weight: bold;
         }
 
         #comment {
@@ -287,14 +265,7 @@
             border: none;
             padding: 3% 2%;
             font-size: 15px;
-        }
 
-        #name,
-        #email,
-        #mobile,
-        #comment,
-        :focus {
-            border: 2px solid #6b351e;
         }
 
         .form-submit {
@@ -302,27 +273,28 @@
             height: 50px;
             margin: 5% 22%;
             padding: 1% 2%;
-            font-size: 20px;
+            font-size: 18px;
             border-radius: 20px;
-            background-color: #6b351e;
-            backdrop-filter: blur(10px);
-            color: #f9edd8;
+            color: white;
             border: 2px solid white;
-            border-radius: 10px;
-            margin-top: 1%;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
         }
 
         .enquiry-button {
-            background-color: #6b351e;
+            background-color: rgb(184,141,51);
+            /* background-color: rgba(0, 0, 0, 0.7); */
             backdrop-filter: blur(10px);
-            color: #f9edd8;
+            color: white;
             width: 120px;
             padding: 10% 5%;
             font-size: 17px;
-            border: 2px solid #f9edd8;
+            border: 2px solid white;
             border-radius: 10px;
-            margin: 2% 0 0 5%;
+            margin-top: 1%;
+            /* color: #b88d33; */
         }
+
 
         .fixed-icons {
             background-image: url("testimonial_images/texture.jpg");
@@ -335,18 +307,24 @@
             justify-content: space-around;
             width: 100%;
             height: 55px;
-            padding: 1% 0 0 1.5%;
+            padding-top: 1%;
+            margin-left: 1.5%;
+
+            /* border: 2px solid red; */
         }
 
-        .whatsapp_icon,
-        .call_icon {
+        .whatsapp_icon , .call_icon{
             margin-top: 1%;
         }
 
         .call_icon {
             margin-left: 2%;
-
+           
         }
+
+
+        /* Rest of your CSS */
+
 
         @media (max-width: 768px) {
             header img {
@@ -379,9 +357,9 @@
                 border-bottom: 2px solid white;
             }
 
-            .left-container h2 {
-                margin: 2% 6% 4% 6%;
-                font-size: 23px;
+            .left-container h3 {
+                margin: 2% 6%;
+                font-size: 15px;
             }
 
             .left-container .description {
@@ -423,18 +401,18 @@
             .modal {
                 justify-content: center;
                 align-items: center;
-                width: 98%;
+                width: 95%;
                 height: 35.5%;
-                margin: 15% 1% 0 1%;
-                border-radius: 12px;
+                margin: 2.5%;
             }
 
             .modal-content {
                 margin: auto;
                 display: block;
-                width: 100%;
-                height: 80%;
-                border: none;
+                margin-top: 3.5%;
+                border-radius: 12px;
+                width: 90%;
+                height: 85%;
             }
 
         }
@@ -446,17 +424,17 @@
             }
         }
     </style>
-
 </head>
 
 <body>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K542CGGV" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
-        <img class="jain-group-logo" src="testimonial_images/jain-group-logo.png" alt="">
+        <!-- <img class="jain-group-logo" src="jain-group-logo.png" alt=""> -->
         <img class="dream_gurukul_logo" src="testimonial_images/dream_gurukul_logo.png" alt="">
     </header>
     <div class="container">
@@ -491,7 +469,7 @@
         </div>
         <div class="fixed-icons">
             <div class="whatsapp_icon">
-                <a href="https://wa.me/9330290724?text=I%20want%20to%20know%20about%20Dream%20Gurukul" id="click_to_whatsapp" target="_blank">
+                <a href="https://wa.me/9330290724" id="click_to_whatsapp" target="_blank">
                     <i class="fa fa-whatsapp" aria-hidden="true" style="color: #1d5c44; font-size: 44px;"></i>
                 </a>
             </div>
@@ -508,9 +486,9 @@
         <div class="form-container">
             <h1>Enquiry Form</h1>
             <button class="closeForm">&times;</button>
-            <form class="form" data-toggle="validator" action="testimonials_enquiry_form_submit.php" id="contactForm"
-                method="post" class="form_background">
-                <input id="utm_source" name="utm_source" type="hidden" value="NewsPaper">
+            <form data-toggle="validator" action="testimonials_enquiry_form_submit.php" id="contactForm" method="post"
+                class="form_background">
+                <input id="utm_source" name="utm_source" type="hidden" value="">
                 <input id="utm_medium" name="utm_medium" type="hidden" value="">
                 <input type="text" id="name" placeholder="Name" name="name"><br>
                 <input type="email" id="email" placeholder="Email" name="email"><br>
@@ -546,24 +524,17 @@
             }
         }
         document.querySelector('.enquiry-button').addEventListener('click', function () {
-            var formContainer = document.querySelector('.form-container');
-            formContainer.classList.add('active'); // Show and fade in
             document.querySelector('.form-container').style.display = 'block';
-            // document.querySelector('.container').classList.add('blur-background'); // Add blur
-            document.body.classList.add('no-scroll'); // Stop scrolling
+            document.querySelector('.enquiry-button').style.display = 'none';
+            document.querySelector('.fixed-icons').style.display = 'none';
         });
 
         document.querySelector('.closeForm').addEventListener('click', function () {
-            var formContainer = document.querySelector('.form-container');
-            formContainer.classList.remove('active'); // Start fade out
-            formContainer.addEventListener('transitionend', function handler() {
-                formContainer.style.display = 'none'; // Hide after transition ends
-                formContainer.removeEventListener('transitionend', handler);
-            });
             document.querySelector('.form-container').style.display = 'none';
-            document.querySelector('.container').classList.remove('blur-background'); // Remove blur
-            document.body.classList.remove('no-scroll'); // Stop scrolling
+            document.querySelector('.enquiry-button').style.display = 'block';
+            document.querySelector('.fixed-icons').style.display = 'block';
         });
+
 
     </script>
     <script type="text/javascript">
@@ -573,10 +544,13 @@
                 var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
                     results = regex.exec(location.search);
                 return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-            }         
+            }
+            var utm_source = getParameterByName('utm_source');
             var utm_medium = getParameterByName('utm_medium');
+            document.getElementById("utm_source").value = utm_source.toString();
             document.getElementById("utm_medium").value = utm_medium.toString();
         });
     </script>
 </body>
+
 </html>
