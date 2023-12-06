@@ -8,7 +8,7 @@
         cursor: pointer;
     }
 </style>
-<section class="sec2 padding minh100 sec2-bg">
+<section class="sec2 padding minh100 sec2-bg section-first">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-xs-12 " style="height: 50vh;">

@@ -39,6 +39,43 @@ body {
 		box-sizing: border-box;
 	}
 }
+/*Header Section*/
+header{position: fixed;width: 100%;top:0;left: 0;padding:10px 0 10px 0;z-index: 9999;transition: all 0.6s ease-in-out;}
+header.active {
+background-color: #fff;
+box-shadow: 0px 3px 6px #00000029;
+z-index: 99;
+}
+// header .brand-logo{transition: 0.2s all ease-in-out;display: none;}
+// header.active .brand-logo{display: block;}
+header .upper .number-wrapper{margin-right: 20px;margin-top: 10px;}
+header .upper .ctc-wrapper{margin-right: 20px;}
+header .upper .enq-btn-wrapper{}
+header .upper .enq-btn-wrapper a{display: inline-block;padding:0px 15px;color:#fff;background-color: #6b6b6b;text-transform: uppercase;line-height: 40px;}
+header .lower .nav-links{text-align: right;}
+header .lower .nav-links a{display: inline-block;margin-right: 20px;margin-top: 10px;color:#000;position: relative;font-size: 18px;transition: 0.6s all ease-in-out;}
+header.active .lower .nav-links a{margin-top: 20px;}
+header .lower .nav-links a.active{color:#7e4b2c;}
+header .lower .nav-links a:last-child{margin-right: 0px;}
+header .form-container{position: absolute;width: 300px; top:calc(100% + 10px);right: 15px;background-color:#efece7;padding:10px;display:none;}
+header .form-container .frmclose{display: none;}
+header .form-container .thankyou{margin-bottom: 10px;}
+
+.call-icon svg {
+width: 20px;
+height: 20px;
+position: relative;
+right: 2px;
+top: 4px;
+}
+.eq-height-row {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+flex-wrap: wrap
+}
+.menu-icon-mobile{display: none;}
 a {
 	text-decoration:none!important;
 	&:focus{
@@ -197,7 +234,7 @@ section {
 	float: left;
 	width: 100%;
 }
-.padding{padding: 70px 0px;}
+.padding{padding: 45px 0px;}
 .pos-rel{position: relative;}
 .pos-abs{position: absolute;}
 .pos-fix{position: fixed;}
@@ -205,8 +242,10 @@ section {
 .top{top: 0;}
 .left{left: 0;}
 .right{right: 0;}
+.visible-md{display: none!important;}
 .visible-xs{display: none!important;}
 .visible-sm{display: none!important;}
+.hidden-md{display: block;}
 .hidden-xs{display: block;}
 .disptable{display: table;height: 100%;}
 .dispblock{display: block;}
@@ -226,7 +265,13 @@ section {
 	}
 }
 .clearfix{clear: both;}
+@media (max-width:1024px) {
+	header.header-bg{background-color: #fff;box-shadow: 0 3px 6px rgba(0,0,0,.1607843137);}
+	.visible-md{display:block!important;}
+	.hidden-md{display:none!important;}
+	header.active .lower .nav-links a{margin-top: 20px;}
 
+}
 @media screen and (min-width:993px) and (max-width:1030px){
     /* common starts */
 .padding{padding:40px 0px;}
@@ -295,6 +340,48 @@ section {
 .hidden-xs{display:none!important;}
 .text-centerm{text-align:center;}
 
+.menu-icon-mobile{display: block;width: 50px;padding: 14px 10px 4px 8px;background-color: none;border-radius: 0px; margin:0;position: absolute;
+	top:5px;right: 10px;height: 40px;}
+.menu-icon-mobile.active{top: 8px;}
+.menu-icon-mobile>span{display: block;height: 2px;width: 100%; margin-bottom: 6px;background-color: #000;}
+.menu-icon-mobile.active>span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.menu-icon-mobile.active>span:nth-child(2) {
+  transform: rotate(135deg);
+  position: relative;
+  top: -8px;
+}
+.menu-icon-mobile.active>span:nth-child(3) {
+  display: none;
+}
+header{padding: 10px 0;}
+header .nav-links{ display: none;position: fixed;top: 69px;left: 0;background-color: #fff; width: 100%;height: 100%;z-index: 999;}
+header .nav-links a{display: block !important;text-align: center;line-height: 40px !important;color:#fff ;margin-top: 0px;margin-right: 0px;}
+header .lower .nav-links a:last-child{margin-right: 0px;}
+header .lower .nav-links a{margin-right: 0px;color:#000;}
+
+header .upper .enq-btn-wrapper{margin-right: 50px;margin-top: 15px;}
+header .upper .ctc-wrapper{margin-right: 5px;}
+header .upper .number-wrapper{margin-right: 15px;margin-top: 25px;}
+header .brand-logo{display: block;}
+header .brand-logo img{width: 150px;}
+}
+@media (max-width:640px) {
+	header{
+		padding: 5px 0;
+	}
+	header .nav-links{
+		top: 58px;
+	}
+	.menu-icon-mobile{
+		top: 3px;
+		right: 0;
+	}
+	.menu-icon-mobile>span{
+		width: 80%;
+	}
+	
 }
       /*Animation Start*/
 

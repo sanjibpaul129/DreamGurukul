@@ -4,7 +4,7 @@
 			<img data-src="assets/images/jaingroup.webp" class="lazy jaingroup">
 			<div class="ftrbox">
 				<div class="col1">
-					<div class="ftrtxt">Corporate Office: <br>Jain Tower, 44/2A, Hazra Road <br>Near Dover Road Crossing, Kolkata - 700 019</div>
+					<div class="ftrtxt">Corporate Office: <br>Jain Tower, 44/2A, Hazra Road <br>Near Dover Road Crossing, Kolkata - 700019</div>
 					<div class="ctabx">
 						<a class="phone" href="tel:+913340319999"><span><img data-src="assets/images/call.svg" class="lazy"></span>+91 33 4031 9999</a>
 						<a class="phone" href="mailto:www.thejaingroup.com"><span><img data-src="assets/images/mail.svg" class="lazy"></span>www.thejaingroup.com</a>
@@ -46,6 +46,7 @@
 </div>
 
 <script src="assets/js/jquery.js"></script>
+<!-- <script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script> -->
 <script type="text/javascript" src="assets/js/all.js"></script>
 <script src="assets/js/jquery.validate.js"></script>
 <script>
@@ -54,6 +55,14 @@
 
 <script>
 	$(document).ready(function() {
+		if (sessionStorage.getItem("Form_status") == "submitted"){
+			$('#enquiryForm').hide();
+			$('.cont-desc').hide();
+			$('#enquirySuccess').show();
+			$('.floatingbtn').css('display','none');
+			$('.fp-wrapper .plans_img').css('pointer-events','unset');
+			$('.fp-wrapper .plans_img img').css('filter','unset');
+		}
 
 		$.validator.setDefaults({
 			submitHandler: function() {
@@ -74,6 +83,7 @@
 					url: "formsubmit.php",
 					data: $("#enquiryForm").serialize(),
 					success: function(respond_message) {
+						sessionStorage.setItem("Form_status","submitted");
 						console.log(respond_message);
 						var email = $("#email").val();
 						var phone = $("#phone").val();
@@ -81,6 +91,9 @@
 						$('#enquiryForm').hide();
 						$('.cont-desc').hide();
 						$('#enquirySuccess').show();
+						$('.floatingbtn').css('display','none');
+						$('.fp-wrapper .plans_img').css('pointer-events','unset');
+						$('.fp-wrapper .plans_img img').css('filter','unset');
 						if (respond_message != "") {
 
 
@@ -91,17 +104,12 @@
 								link.click();
 							} else {
 									window.location.href = "thankyou.php";
+									// window.open('thankyou.php', '_blank'); 
 							}
 						}
 					},
 					error: function(respond_message) {}
 				});
-
-				// $(".bro-btn").attr({ "href": "mobile_brochure2.pdf", "target": "_blank" });
-				// $(".bro-btn").removeClass("open-form");
-				// if (flag == 1) {
-				// 	$(".bro").css("display", "inline-block");
-				// }
 			}
 		});
 		$("#enquiryForm").validate();

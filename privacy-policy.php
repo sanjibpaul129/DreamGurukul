@@ -1,8 +1,5 @@
 <?php include "header.php" ?>
-<style>
-    p{margin-bottom:20px}
-</style>
-<section class="sec2 padding lazy" data-src="assets/images/sec2bg.webp">
+<section class="sec2 sec2-bg padding minh100">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-xs-12">

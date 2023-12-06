@@ -11,7 +11,7 @@ var livereload = require('gulp-livereload');
 
 
 gulp.task('js', function() {
-    return gulp.src(['app/js/jquery.js', 'app/js/smooth.js', 'app/js/animation.js', 'app/js/app.js', 'app/js/slick.js', 'app/js/ecommerce_ga4.js'])
+    return gulp.src(['app/js/jquery.js', 'app/js/smooth.js', 'app/js/animation.js', 'app/js/jquery.colorbox-min.js', 'app/js/jquery.smoothZoom.min.js', 'app/js/app.js', 'app/js/slick.js', 'app/js/ecommerce_ga4.js'])
         .pipe(concat('all.js'))
         .pipe(plumber())
         .pipe(uglify())
