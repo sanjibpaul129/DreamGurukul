@@ -1,7 +1,7 @@
 <?php
     $name = $_POST["name"];
     $email = $_POST["email"];
-    $contact = $_POST["contact"];
+    $contact = $_POST["mobile"];
     $comments = $_POST["comments"];
     $project = "Dream Gurukul";
     $utm_form_name = "Enquiry Form";
