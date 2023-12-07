@@ -11,7 +11,7 @@ if($name && $phone && $email){
 	$curl = curl_init();
   	curl_setopt_array($curl, 
   		array(
-		    CURLOPT_URL => 'https://www.realtybucket.com/webhook/website_form_data?apikey=kG6vgYgUqEmnHUtHX15pNQ&name=' . $name . '&email=' . $email . '&contact=' . $phone . '&project=Dream%20Gurukul&utm_form_name=Discovery%20Leadgen&utm_source=google&network=test_data&campaign_id=test_data&adgroup_id=&gclid=&device=&creative=&placement=&target_id=&loc_interest_ms=&loc_physical_ms=&device_model=&keyword=&match_type=&mobile=',
+		    CURLOPT_URL => 'https://www.realtybucket.com/webhook/website_form_data?apikey=kG6vgYgUqEmnHUtHX15pNQ&name=' . $name . '&email=' . $email . '&contact=' . $phone . '&project=Dream%20Gurukul&utm_form_name=Discovery%20Leadgen&utm_source=discovery',
 		    CURLOPT_RETURNTRANSFER => true,
 		    CURLOPT_ENCODING => '',
 		    CURLOPT_MAXREDIRS => 10,

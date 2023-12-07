@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<link rel="icon" href="assets/images/favicon.webp" disabled />
-	<title>Dream Gurukul: Buy 3 BHK Flats in Madhyamgram, Kolkata</title>
-	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale in Madhyamgram Kolkata near airport to enhance lifestyle of your kids for a bright future." />
+	<title>Dream Gurukul: Buy 3 BHK Flats near Airport, Kolkata</title>
+	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale near the airport, to enhance lifestyle of your kids for a bright future." />
 	<meta name="keywords" content="Dream Gurukul" />
 		<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>" />
 		<link rel="stylesheet" href="assets/css/colorbox.css" />
@@ -39,71 +39,220 @@
 	?> 
 	<body>
 		<div id="light" class="white_content">
-			<div class="form-wrap" id="">
-				<div class="cont-desc">Enquiry Form</div>
-				<form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate>
-					<input type="hidden" name="utmsource" class="utmSource" value="<?php echo $_GET['utm_source']; ?>">
-					<input type="hidden" name="utmcampaign" class="utmCampaign" value="<?php echo $_GET['utm_campaign']; ?>">
-					<input type="hidden" name="utmmedium" class="utmMedium" value="<?php echo $_GET['utm_medium']; ?>">
-					<input type="hidden" name="utmterm" class="utmTerm" value="<?php echo $_GET['utm_term']; ?>">
-					<div class="col-12 pos-rel">
-						<input class="full iptxt" onkeydown="return /[a-z, ]/i.test(event.key)" type="text" id="sname" name="fullname" placeholder="Full Name*" required>
-					</div>
-					<div class="col-12 pos-rel">
-						<input class="full phoneVal" type="tel" id="phone" name="phone" placeholder="Phone Number*" minlength="10" maxlength="13" required>
-					</div>
-					<div class="col-12 pos-rel">
-						<input class="full" id="email" name="email" type="email" placeholder="Email*" required><br class="hidden-xs">
-					</div>
-					<div class="col-12 pos-rel">
-						<input class="full" name="comments" type="textarea" placeholder="Comments"><br class="hidden-xs">
-					</div>
-				<!-- <div class="col-12">
-                <select id="course" class="full" name="class" required>
-                    <option name="class" value="">Select Class*</option>
-                    <option name="class" value="Course">Nursury</option>
-                    <option name="class" value="Course">LKG</option>
-                    <option name="class" value="Course">UKG</option>
-                    <option name="class" value="Course">Standard 1</option>
-                    <option name="class" value="Course">Standard 2</option>
-                    <option name="class" value="Course">Standard 3</option>
-                    <option name="class" value="Course">Standard 4</option>
-                    <option name="class" value="Course">Standard 5</option>
-                    <option name="class" value="Course">Standard 6</option>
-                </select><br class="hidden-xs">
-            </div> -->
-            <input type="submit" class="enquire-btn-now submit-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
-        </form>
-        <div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
-    </div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="assets/images/close.webp" alt="Overview"></a>
-</div>
-<div id="fade" class="black_overlay">
-
-</div>
-<?php if ($curPageName == "index.php") {?>	
-	<div class="sticky-btn">
-		<div class="d-inline-block">
-			<a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-				<img src="assets/images/left1.webp" class="left" alt="Overview">
-				<div class="center pos-rel">
-					<div class="centertxt">KNOW MORE</div>
-					<img src="assets/images/center1.webp" alt="Overview">
-				</div>
-				<img src="assets/images/right1.webp" class="right" alt="Overview">
-			</a>
-		</div>
-		<div class="d-inline-block">
-			<a class="btnbox" href="javascript:;" id="download-brochure">
-				<img src="assets/images/left1.webp" class="left" alt="Overview">
-				<div class="center pos-rel">
-					<div class="centertxt">Download Brochure</div>
-					<img src="assets/images/center1.webp" alt="Overview">
-				</div>
-				<img src="assets/images/right1.webp" class="right" alt="Overview">
-			</a>
-		</div>
-	</div>
-<?php } ?>
+    		<div class="form-wrap" id="">
+    			<div class="cont-desc">Enquiry Form</div>
+    			<!-- <form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate> -->
+    			<form data-toggle="validator" action="enquiry_form_submit.php" id="enquire_now" method="post" class="contact-form enquire-form">
+    				<input id="utm_source" name="utm_source" type="hidden" value="">
+    				<input id="utm_campaign" name="utm_campaign" type="hidden" value="">
+    				<input id="utm_medium" name="utm_medium" type="hidden" value="">
+    				<input id="utm_term" name="utm_term" type="hidden" value="">
+    				<input id="network" name="network" type="hidden" value="">
+    				<input id="campaign_id" name="campaign_id" type="hidden" value="">
+    				<input id="adgroup_id" name="adgroup_id" type="hidden" value="">
+    				<input id="gclid" name="gclid" type="hidden" value="">
+    				<input id="device" name="device" type="hidden" value="">
+    				<input id="creative" name="creative" type="hidden" value="">
+    				<input id="placement" name="placement" type="hidden" value="">
+    				<input id="target_id" name="target_id" type="hidden" value="">
+    				<input id="loc_interest_ms" name="loc_interest_ms" type="hidden" value="">
+    				<input id="loc_physical_ms" name="loc_physical_ms" type="hidden" value="">
+    				<input id="device_model" name="device_model" type="hidden" value="">
+    				<input id="keyword" name="keyword" type="hidden" value="">
+    				<input id="match_type" name="match_type" type="hidden" value="">
+    				<div class="col-12 pos-rel">
+    					<input class="full iptxt" onkeydown="return /[a-z, ]/i.test(event.key)" type="text" id="sname" name="fullname" placeholder="Full Name*" required>
+    				</div>
+    				<div class="col-12 pos-rel">
+    					<input class="full phoneVal" type="tel" id="phone" name="phone" placeholder="Phone Number*" minlength="10" maxlength="13" required>
+    				</div>
+    				<div class="col-12 pos-rel">
+    					<input class="full" id="email" name="email" type="email" placeholder="Email*" required><br class="hidden-xs">
+    				</div>
+    				<div class="col-12 pos-rel">
+    					<input class="full" name="comments" type="textarea" placeholder="Comments"><br class="hidden-xs">
+    				</div>
+    
+    				<input type="submit" class="enquire-btn-now submit-btn theme-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
+    			</form>
+    			<script type="text/javascript">
+    	          jQuery(document).ready(function($){
+    	            function getParameterByName(name) {
+    	                name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+    	                var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+    	                    results = regex.exec(location.search);
+    	                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    	            }
+    	            var utm_source = getParameterByName('utm_source');
+    	            var utm_campaign = getParameterByName('utm_campaign');
+    	            var utm_medium = getParameterByName('utm_medium');
+    	            var utm_term = getParameterByName('utm_term');
+    	            var network = getParameterByName('network');
+    	            var campaign_id = getParameterByName('campaign_id');
+    	            var adgroup_id = getParameterByName('adgroup_id');
+    	            var gclid = getParameterByName('gclid');
+    	            var device = getParameterByName('device');
+    	            var creative = getParameterByName('creative');
+    	            var placement = getParameterByName('placement');
+    	            var target_id = getParameterByName('target_id');
+    	            var loc_interest_ms = getParameterByName('loc_interest_ms');
+    	            var loc_physical_ms = getParameterByName('loc_physical_ms');
+    	            var device_model = getParameterByName('device_model');
+    	            var keyword = getParameterByName('keyword');
+    	            var match_type = getParameterByName('match_type');
+    	            var mobile = getParameterByName('mobile');
+    
+    	            document.getElementById("utm_source").value = utm_source.toString();
+    	            document.getElementById("utm_campaign").value = utm_campaign.toString();
+    	            document.getElementById("utm_medium").value = utm_medium.toString();
+    	            document.getElementById("utm_term").value = utm_term.toString();
+    	            document.getElementById("network").value = network.toString();
+    	            document.getElementById("campaign_id").value = campaign_id.toString();
+    	            document.getElementById("adgroup_id").value = adgroup_id.toString();
+    	            document.getElementById("gclid").value = gclid.toString();
+    	            document.getElementById("device").value = device.toString();
+    	            document.getElementById("creative").value = creative.toString();
+    	            document.getElementById("placement").value = placement.toString();
+    	            document.getElementById("target_id").value = target_id.toString();
+    	            document.getElementById("loc_interest_ms").value = loc_interest_ms.toString();
+    	            document.getElementById("loc_physical_ms").value = loc_physical_ms.toString();
+    	            document.getElementById("device_model").value = device_model.toString();
+    	            document.getElementById("keyword").value = keyword.toString();
+    	            document.getElementById("match_type").value = match_type.toString();
+    	            if (mobile == "" || mobile == null)
+    	            {}
+    	            else
+    	            {
+    	                document.getElementById('calling_function').setAttribute('href', "tel:"+mobile.toString());
+    	            }
+    	        });
+    	        </script>
+    			<div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
+    		</div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="dreamgurukul/assets/images/close.webp" alt="Overview"></a>
+    	</div>
+    	<div id="fade" class="black_overlay">
+    
+    	</div>
+    	
+    	<div id="download_brochure" class="white_content">
+    		<div class="form-wrap" id="">
+    			<div class="cont-desc">Download Brochure Form</div>
+    			<!-- <form id="enquiryForm" method="POST" class="contact-form enquire-form" novalidate> -->
+    			<form data-toggle="validator" action="download_brochure_submit.php" id="enquire_now" method="post" class="contact-form enquire-form">
+    				<input id="utm_source" name="utm_source" type="hidden" value="">
+    				<input id="utm_campaign" name="utm_campaign" type="hidden" value="">
+    				<input id="utm_medium" name="utm_medium" type="hidden" value="">
+    				<input id="utm_term" name="utm_term" type="hidden" value="">
+    				<input id="network" name="network" type="hidden" value="">
+    				<input id="campaign_id" name="campaign_id" type="hidden" value="">
+    				<input id="adgroup_id" name="adgroup_id" type="hidden" value="">
+    				<input id="gclid" name="gclid" type="hidden" value="">
+    				<input id="device" name="device" type="hidden" value="">
+    				<input id="creative" name="creative" type="hidden" value="">
+    				<input id="placement" name="placement" type="hidden" value="">
+    				<input id="target_id" name="target_id" type="hidden" value="">
+    				<input id="loc_interest_ms" name="loc_interest_ms" type="hidden" value="">
+    				<input id="loc_physical_ms" name="loc_physical_ms" type="hidden" value="">
+    				<input id="device_model" name="device_model" type="hidden" value="">
+    				<input id="keyword" name="keyword" type="hidden" value="">
+    				<input id="match_type" name="match_type" type="hidden" value="">
+    				<div class="col-12 pos-rel">
+    					<input class="full iptxt" onkeydown="return /[a-z, ]/i.test(event.key)" type="text" id="sname" name="fullname" placeholder="Full Name*" required>
+    				</div>
+    				<div class="col-12 pos-rel">
+    					<input class="full phoneVal" type="tel" id="phone" name="phone" placeholder="Phone Number*" minlength="10" maxlength="13" required>
+    				</div>
+    				<div class="col-12 pos-rel">
+    					<input class="full" id="email" name="email" type="email" placeholder="Email*" required><br class="hidden-xs">
+    				</div>
+    				<div class="col-12 pos-rel">
+    					<input class="full" name="comments" type="textarea" placeholder="Comments"><br class="hidden-xs">
+    				</div>
+    
+    				<input type="submit" class="enquire-btn-now submit-btn theme-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
+    			</form>
+    			<script type="text/javascript">
+    	          jQuery(document).ready(function($){
+    	            function getParameterByName(name) {
+    	                name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+    	                var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+    	                    results = regex.exec(location.search);
+    	                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    	            }
+    	            var utm_source = getParameterByName('utm_source');
+    	            var utm_campaign = getParameterByName('utm_campaign');
+    	            var utm_medium = getParameterByName('utm_medium');
+    	            var utm_term = getParameterByName('utm_term');
+    	            var network = getParameterByName('network');
+    	            var campaign_id = getParameterByName('campaign_id');
+    	            var adgroup_id = getParameterByName('adgroup_id');
+    	            var gclid = getParameterByName('gclid');
+    	            var device = getParameterByName('device');
+    	            var creative = getParameterByName('creative');
+    	            var placement = getParameterByName('placement');
+    	            var target_id = getParameterByName('target_id');
+    	            var loc_interest_ms = getParameterByName('loc_interest_ms');
+    	            var loc_physical_ms = getParameterByName('loc_physical_ms');
+    	            var device_model = getParameterByName('device_model');
+    	            var keyword = getParameterByName('keyword');
+    	            var match_type = getParameterByName('match_type');
+    	            var mobile = getParameterByName('mobile');
+    
+    	            document.getElementById("utm_source").value = utm_source.toString();
+    	            document.getElementById("utm_campaign").value = utm_campaign.toString();
+    	            document.getElementById("utm_medium").value = utm_medium.toString();
+    	            document.getElementById("utm_term").value = utm_term.toString();
+    	            document.getElementById("network").value = network.toString();
+    	            document.getElementById("campaign_id").value = campaign_id.toString();
+    	            document.getElementById("adgroup_id").value = adgroup_id.toString();
+    	            document.getElementById("gclid").value = gclid.toString();
+    	            document.getElementById("device").value = device.toString();
+    	            document.getElementById("creative").value = creative.toString();
+    	            document.getElementById("placement").value = placement.toString();
+    	            document.getElementById("target_id").value = target_id.toString();
+    	            document.getElementById("loc_interest_ms").value = loc_interest_ms.toString();
+    	            document.getElementById("loc_physical_ms").value = loc_physical_ms.toString();
+    	            document.getElementById("device_model").value = device_model.toString();
+    	            document.getElementById("keyword").value = keyword.toString();
+    	            document.getElementById("match_type").value = match_type.toString();
+    	            if (mobile == "" || mobile == null)
+    	            {}
+    	            else
+    	            {
+    	                document.getElementById('calling_function').setAttribute('href', "tel:"+mobile.toString());
+    	            }
+    	        });
+    	        </script>
+    			<div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
+    		</div> <a class="closebtn" href="javascript:;" onclick="document.getElementById('download_brochure').style.display='none';document.getElementById('fade').style.display='none'"><img src="dreamgurukul/assets/images/close.webp" alt="Overview"></a>
+    	</div>
+    	<div id="fade_donwload" class="black_overlay">
+    
+    	</div>
+		<?php if ($curPageName == "index.php") {?>	
+			<div class="sticky-btn">
+	    		<div class="d-inline-block">
+	        		<a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+	        			<img src="dreamgurukul/assets/images/left1.webp" class="left" alt="Overview">
+	        			<div class="center pos-rel">
+	        				<div class="centertxt">KNOW MORE</div>
+	        				<img src="dreamgurukul/assets/images/center1.webp" alt="Overview">
+	        			</div>
+	        			<img src="dreamgurukul/assets/images/right1.webp" class="right" alt="Overview">
+	        		</a> 
+	        	</div>
+	        	<div class="d-inline-block">
+	        		<a class="btnbox" onclick="document.getElementById('download_brochure').style.display='block';document.getElementById('fade').style.display='block';">
+	        			<img src="dreamgurukul/assets/images/left1.webp" class="left" alt="Overview">
+	        			<div class="center pos-rel">
+	        				<div class="centertxt">Download Brochure</div>
+	        				<img src="dreamgurukul/assets/images/center1.webp" alt="Overview">
+	        			</div>
+	        			<img src="dreamgurukul/assets/images/right1.webp" class="right" alt="Overview">
+	        		</a>
+	    		</div>
+	    	</div>
+		<?php } ?>
 <div class="fixed-whatsapp-icon">
 	<a href="https://wa.me/919330290724?text=Interested%20in%20Dream%20Gurukul" target="_blank"><img src="./assets/images/whatsapp-icon.webp" alt=""></a>
 </div>
