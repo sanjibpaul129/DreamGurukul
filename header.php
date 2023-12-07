@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="icon" href="assets/images/favicon.webp" disabled />
+		<title>Dream Gurukul: Buy 3 BHK Flats near Airport, Kolkata</title>
+		<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale near the airport, to enhance lifestyle of your kids for a bright future." />
+		<meta name="keywords" content="Dream Gurukul" />
+			<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>" />
+			<link rel="stylesheet" href="assets/css/colorbox.css" />
+			<link rel="stylesheet" href="assets/css/all.css">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<link rel="icon" href="assets/images/favicon.webp" disabled />
-	<title>Dream Gurukul: Buy 3 BHK Flats near Airport, Kolkata</title>
-	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale near the airport, to enhance lifestyle of your kids for a bright future." />
-	<meta name="keywords" content="Dream Gurukul" />
-		<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>" />
-		<link rel="stylesheet" href="assets/css/colorbox.css" />
-		<link rel="stylesheet" href="assets/css/all.css">
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJGBYLED8"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJGBYLED8"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+				gtag('js', new Date());
+				gtag('config', 'G-KKJGBYLED8', {});
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'G-KKJGBYLED8', {});
-
-			var download_brochure = 0;
-		</script>
-		<style>
-			.d-inline-block{
-				display: inline-block;
-			}
-		</style>
-
+				var download_brochure = 0;
+			</script>
+			<style>
+				.d-inline-block{
+					display: inline-block;
+				}
+			</style>
 	</head>
 	<?php  
 	$curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);  
@@ -297,7 +295,7 @@
 			</div>
 		</div>
 	</header> -->
-	<header class="header-bg">	
+	<!-- <header class="header-bg">	
 		<div class="container pos-rel">
 			<div class="row">
 				<div class="pull-left col-2 col-xs-9 brand-logo">
@@ -327,4 +325,4 @@
 				<a href="javascript:;" class="frmclose" data-event-category="Section" data-event-action="Click" data-event-name="Form Close">X</a>
 			</div>
 		</div>
-	</header>
+	</header> -->
