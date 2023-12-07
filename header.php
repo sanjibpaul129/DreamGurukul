@@ -126,7 +126,7 @@
     	        });
     	        </script>
     			<div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
-    		</div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="dreamgurukul/assets/images/close.webp" alt="Overview"></a>
+    		</div> <a class="closebtn" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="assets/images/close.webp" alt="Overview"></a>
     	</div>
     	<div id="fade" class="black_overlay">
     
@@ -222,7 +222,7 @@
     	        });
     	        </script>
     			<div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
-    		</div> <a class="closebtn" href="javascript:;" onclick="document.getElementById('download_brochure').style.display='none';document.getElementById('fade').style.display='none'"><img src="dreamgurukul/assets/images/close.webp" alt="Overview"></a>
+    		</div> <a class="closebtn" href="javascript:;" onclick="document.getElementById('download_brochure').style.display='none';document.getElementById('fade').style.display='none'"><img src="assets/images/close.webp" alt="Overview"></a>
     	</div>
     	<div id="fade_donwload" class="black_overlay">
     
@@ -231,22 +231,22 @@
 			<div class="sticky-btn">
 	    		<div class="d-inline-block">
 	        		<a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
-	        			<img src="dreamgurukul/assets/images/left1.webp" class="left" alt="Overview">
+	        			<img src="assets/images/left1.webp" class="left" alt="Overview">
 	        			<div class="center pos-rel">
 	        				<div class="centertxt">KNOW MORE</div>
-	        				<img src="dreamgurukul/assets/images/center1.webp" alt="Overview">
+	        				<img src="assets/images/center1.webp" alt="Overview">
 	        			</div>
-	        			<img src="dreamgurukul/assets/images/right1.webp" class="right" alt="Overview">
+	        			<img src="assets/images/right1.webp" class="right" alt="Overview">
 	        		</a> 
 	        	</div>
 	        	<div class="d-inline-block">
 	        		<a class="btnbox" onclick="document.getElementById('download_brochure').style.display='block';document.getElementById('fade').style.display='block';">
-	        			<img src="dreamgurukul/assets/images/left1.webp" class="left" alt="Overview">
+	        			<img src="assets/images/left1.webp" class="left" alt="Overview">
 	        			<div class="center pos-rel">
 	        				<div class="centertxt">Download Brochure</div>
-	        				<img src="dreamgurukul/assets/images/center1.webp" alt="Overview">
+	        				<img src="assets/images/center1.webp" alt="Overview">
 	        			</div>
-	        			<img src="dreamgurukul/assets/images/right1.webp" class="right" alt="Overview">
+	        			<img src="assets/images/right1.webp" class="right" alt="Overview">
 	        		</a>
 	    		</div>
 	    	</div>
