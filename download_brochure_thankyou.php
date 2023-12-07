@@ -495,7 +495,7 @@
 <script>
     $("#go-home").click(function(){
         <!--url = window.location.origin;-->
-       url = "https://thejaingroup.com/dream_gurukul.php";
+       url = "https://dreamgurukul.in/";
         window.location.href = url
     })
 </script>
