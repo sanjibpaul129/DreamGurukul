@@ -53,10 +53,11 @@ header .upper .ctc-wrapper{margin-right: 20px;}
 header .upper .enq-btn-wrapper{}
 header .upper .enq-btn-wrapper a{display: inline-block;padding:0px 15px;color:#fff;background-color: #6b6b6b;text-transform: uppercase;line-height: 40px;}
 header .lower .nav-links{text-align: right;}
-header .lower .nav-links a{display: inline-block;margin-right: 20px;margin-top: 10px;color:#000;position: relative;font-size: 18px;transition: 0.6s all ease-in-out;}
+header .lower .nav-links a{display: inline-block;margin-right: 10px;margin-top: 10px;color:#000;position: relative;font-size: 16px;transition: 0.6s all ease-in-out;}
 header.active .lower .nav-links a{margin-top: 20px;}
 header .lower .nav-links a.active{color:#7e4b2c;}
-header .lower .nav-links a:last-child{margin-right: 0px;}
+header.active .lower .nav-links a:last-child{transition: 0.6s all ease-in-out;margin-top: 10px;}
+header .lower .nav-links a:last-child{margin: 0;color: #fff;}
 header .form-container{position: absolute;width: 300px; top:calc(100% + 10px);right: 15px;background-color:#efece7;padding:10px;display:none;}
 header .form-container .frmclose{display: none;}
 header .form-container .thankyou{margin-bottom: 10px;}
@@ -356,16 +357,17 @@ section {
   display: none;
 }
 header{padding: 10px 0;}
+header .nav-links a.call-us{display: none !important;}
 header .nav-links{ display: none;position: fixed;top: 69px;left: 0;background-color: #fff; width: 100%;height: 100%;z-index: 999;}
 header .nav-links a{display: block !important;text-align: center;line-height: 40px !important;color:#fff ;margin-top: 0px;margin-right: 0px;}
 header .lower .nav-links a:last-child{margin-right: 0px;}
 header .lower .nav-links a{margin-right: 0px;color:#000;}
-
 header .upper .enq-btn-wrapper{margin-right: 50px;margin-top: 15px;}
 header .upper .ctc-wrapper{margin-right: 5px;}
 header .upper .number-wrapper{margin-right: 15px;margin-top: 25px;}
 header .brand-logo{display: block;}
 header .brand-logo img{width: 150px;}
+#know-more{display: none;}
 }
 @media (max-width:640px) {
 	header{
@@ -521,4 +523,10 @@ header .brand-logo img{width: 150px;}
 
 	.fadeIn {
 		animation-name: fadeIn;
+	}
+	@media only screen and (min-width: 1024px) and (max-width: 1292px)  {
+		header .lower .nav-links a{
+			margin-right: 4px;
+			font-size: 14px;
+		}
 	}

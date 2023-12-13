@@ -37,12 +37,13 @@
 	</div>
 </footer>
 <div class="col-12 footer-call-enquire">
-	<div class="col-6">
-		<a data-event-category="Footer" data-event-action="click" data-event-name="Call"><span class="sell_do_virtual_numbers"></span></a>
+<div class="col-6 ">
+	<a href="tel:+919513436882" style="color:#fff;" data-event-category="Footer" data-event-action="click" data-event-name="Call">+91 951 343 6882</a>
 	</div>
 	<div class="col-6 enq">
-		<div class="enquire-btn dbro open-form extLink mobile" data-event-category="Footer" data-event-action="click" data-event-name="Enquire Now" style="color:#fff;">Enquire Now</div>
+	<div class="" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" data-event-category="Footer" data-event-action="click" data-event-name="ENQUIRE NOW" style="color:#fff;border-left:1px solid">ENQUIRE NOW</div>
 	</div>
+	
 </div>
 
 <script src="assets/js/jquery.js"></script>

@@ -31,6 +31,36 @@
 			}
 		</style>
 
+
+<script data-obct type = "text/javascript">
+	/** Pixel code **/
+  /** DO NOT MODIFY THIS CODE**/
+  !function(_window, _document) {
+    var OB_ADV_ID = '004d1b16f95260be62989253c1b455adba';
+    if (_window.obApi) {
+      var toArray = function(object) {
+        return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
+      };
+      _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
+      return;
+    }
+    var api = _window.obApi = function() {
+      api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+    };
+    api.version = '1.1';
+    api.loaded = true;
+    api.marketerId = OB_ADV_ID;
+    api.queue = [];
+    var tag = _document.createElement('script');
+    tag.async = true;
+    tag.src = '//amplify.outbrain.com/cp/obtp.js';
+    tag.type = 'text/javascript';
+    var script = _document.getElementsByTagName('script')[0];
+    script.parentNode.insertBefore(tag, script);
+  }(window, document);
+
+  obApi('track', 'PAGE_VIEW');
+</script>
 	</head>
 	<?php  
 	$curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);  
@@ -58,20 +88,6 @@
 					<div class="col-12 pos-rel">
 						<input class="full" name="comments" type="textarea" placeholder="Comments"><br class="hidden-xs">
 					</div>
-				<!-- <div class="col-12">
-                <select id="course" class="full" name="class" required>
-                    <option name="class" value="">Select Class*</option>
-                    <option name="class" value="Course">Nursury</option>
-                    <option name="class" value="Course">LKG</option>
-                    <option name="class" value="Course">UKG</option>
-                    <option name="class" value="Course">Standard 1</option>
-                    <option name="class" value="Course">Standard 2</option>
-                    <option name="class" value="Course">Standard 3</option>
-                    <option name="class" value="Course">Standard 4</option>
-                    <option name="class" value="Course">Standard 5</option>
-                    <option name="class" value="Course">Standard 6</option>
-                </select><br class="hidden-xs">
-            </div> -->
             <input type="submit" class="enquire-btn-now submit-btn" id="enquiry-submit" value="Submit" data-event-category="Button" data-event-action="Click" data-event-name="Submit Enquire Form">
         </form>
         <div id="enquirySuccess" class="success dark-btn text-center mg-tp-20 pd-bt-20" style="display: none;">Your response has been received. <br> Thank You</div>
@@ -82,8 +98,9 @@
 </div>
 <?php if ($curPageName == "index.php") {?>	
 	<div class="sticky-btn">
-		<div class="d-inline-block">
-			<a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+	<a class="theme-btn" href="javascript:;" id="download-brochure">Brochure</a>
+		<!-- <div class="d-inline-block">
+			<a class="btnbox" id="know-more" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
 				<img src="assets/images/left1.webp" class="left" alt="Overview">
 				<div class="center pos-rel">
 					<div class="centertxt">KNOW MORE</div>
@@ -91,63 +108,13 @@
 				</div>
 				<img src="assets/images/right1.webp" class="right" alt="Overview">
 			</a>
-		</div>
-		<div class="d-inline-block">
-			<a class="btnbox" href="javascript:;" id="download-brochure">
-				<img src="assets/images/left1.webp" class="left" alt="Overview">
-				<div class="center pos-rel">
-					<div class="centertxt">Download Brochure</div>
-					<img src="assets/images/center1.webp" alt="Overview">
-				</div>
-				<img src="assets/images/right1.webp" class="right" alt="Overview">
-			</a>
-		</div>
+		</div> -->
 	</div>
 <?php } ?>
 <div class="fixed-whatsapp-icon">
 	<a href="https://wa.me/919330290724?text=Interested%20in%20Dream%20Gurukul" target="_blank"><img src="./assets/images/whatsapp-icon.webp" alt=""></a>
 </div>
-	<!-- <header>
-		<div class="container pos-rel header-br">
-			<div class="row align-center">
-				<div class="pull-left col-2 col-sm-4 col-xs-6 brand-logo">
-					<a href="javascript:;" rel="home" class="goto-home logo-header">
-						<img src="assets/images/logo.svg" alt="Brand Logo" class="img-responsive" data-event-category="Header" data-event-action="Click" data-event-name="Logo">
-					</a>
-				</div>
-				<div class="col-10 col-sm-8 col-xs-6 pull-right">
-					<div class="pull-right menu-icon-mobile">
-						<span class="bar1"></span>
-						<span class="bar2"></span>
-						<span class="bar3"></span>
-					</div>
-					<div class="col-12 pull-right lower">
-						<ul class="nav-links pull-right">
-							<li><a href="javascript:;" rel="overview" data-event-category="Header" data-event-action="Click" data-event-name="Overview">Overview</a></li>
-							<li><a href="javascript:;" rel="highlights" data-event-category="Header" data-event-action="Click" data-event-name="Highlights">Highlights</a></li>
-							<li><a href="javascript:;" rel="layouts" data-event-category="Header" data-event-action="Click" data-event-name="#Interest Free EMI">Offices</a></li>
-							<li><a href="javascript:;" rel="homes" data-event-category="Header" data-event-action="Click" data-event-name="Homes">Shops</a></li>
-							<li><a href="javascript:;" rel="wakad" data-event-category="Header" data-event-action="Click" data-event-name="Wakad">Why Wakad?</a></li>
-							<li><a href="javascript:;" rel="location" data-event-category="Header" data-event-action="Click" data-event-name="Location">Location</a></li>
-							<li><a href="javascript:;" rel="amenities" data-event-category="Header" data-event-action="Click" data-event-name="Amenities">Amenities</a></li>
-							<li><a href="javascript:;" rel="specifications" data-event-category="Header" data-event-action="Click" data-event-name="Specifications">Specifications</a></li>
-							<li><a href="javascript:;" rel="about" data-event-category="Header" data-event-action="Click" data-event-name="About Us">About Us</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="form-container">
-				<div class="text-right">
-					<a href="javascript:void(0);" class="frmclose fontM" data-event-category="Section" data-event-action="Click" data-event-name="Form Close">&times;</a>
-				</div>
-				<div id="fs">
-					<script src="//forms.cdn.sell.do/t/forms/649940548eb6d849f6de3c18/649940d78eb6d84bb28829b9.js" data-form-id="649940d78eb6d84bb28829b9"></script>
-					<div class="text-center">
-					</div>
-				</div>
-			</div>
-		</div>
-	</header> -->
+
 	<header class="header-bg">	
 		<div class="container pos-rel">
 			<div class="row">
@@ -164,12 +131,17 @@
 						<?php if ($curPageName == "index.php") {?>
 							<div class="nav-links">
 								<a href="javascript:;" rel="overview" data-event-category="Header" data-event-action="Click" data-event-name="Overview">Overview</a>
-								<a href="javascript:;" rel="floor-plan" data-event-category="Header" data-event-action="Click" data-event-name="floorPlan">Floor Plan</a>
-								<a href="javascript:;" rel="location" data-event-category="Header" data-event-action="Click" data-event-name="Location">Location</a>
 								<a href="javascript:;" rel="amenities" data-event-category="Header" data-event-action="Click" data-event-name="Amenities">Amenities</a>
+								<a href="javascript:;" rel="floor-plan" data-event-category="Header" data-event-action="Click" data-event-name="floorPlans">Floor Plans</a>
 								<a href="javascript:;" rel="gallery" data-event-category="Header" data-event-action="Click" data-event-name="Gallery">Gallery</a>
-								<a href="javascript:;" rel="about-us" data-event-category="Header" data-event-action="Click" data-event-name="about">About</a>
+								<a href="javascript:;" rel="location" data-event-category="Header" data-event-action="Click" data-event-name="Location">Location</a>
+								<a href="javascript:;" rel="about-us" data-event-category="Header" data-event-action="Click" data-event-name="about">About Us</a>
+								<a href="tel:+919513436882" class="call-us hidden-xs" data-event-category="Footer" data-event-action="click" data-event-name="Call Us"><img style="vertical-align:middle;margin-right:10px;" src="assets/images/call.svg" alt="call" class="img-responsive"/>+91 951 343 6882</a>
+								<span class="hidden-xs border pull-right">
+						          <a href="javascript:;" class="text-medium theme-btn" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" id="hid-on-mob" data-event-category="Header" data-event-action="Click" data-event-name="Enquire Now">ENQUIRE NOW</a>
+						        </span>
 							</div>
+							
 						<?php } ?>
 					</div>
 				</div>

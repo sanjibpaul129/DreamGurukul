@@ -203,22 +203,22 @@ $(".plans_img").colorbox({
         autoplay:false,
         vertical:true,
       })
-      $('.locationIconWrapper').slick({
-        slidesToShow:4,
-        arrows:false,
-        autoplay:true,
-        responsive: [
-          {
-            breakpoint: 640,
-            settings: {
-              // rows:2,
-              slidesToShow:1,
-              // slidesPerRow: 1,
-              // rows: 4
-            }
-          },
-        ]
-      });
+      // $('.locationIconWrapper').slick({
+      //   slidesToShow:4,
+      //   arrows:false,
+      //   autoplay:true,
+      //   responsive: [
+      //     {
+      //       breakpoint: 640,
+      //       settings: {
+      //         // rows:2,
+      //         slidesToShow:1,
+      //         // slidesPerRow: 1,
+      //         // rows: 4
+      //       }
+      //     },
+      //   ]
+      // });
       $('.locMobSlider').slick({
         slidesToShow:1,
         arrows:true,
@@ -292,7 +292,7 @@ $(".plans_img").colorbox({
       });
 
       $('.amenities-slider-2').slick({
-        slidesToShow: 10,
+        slidesToShow: 12,
         slidesToScroll: 1,
         // rows:10;
         arrows: false,
@@ -320,7 +320,22 @@ $(".plans_img").colorbox({
           var src = $(this).attr("src");
           $(this).attr("src", src.replace(/\.webp$/i, "-mob.webp"));
         });
+
+        $('.location-adv-slider').slick({
+          arrows: true,
+          autoplay:true,
+          slidesToShow: 1,
+          lazyLoad: 'ondemand',
+          dots: false,
+          autoplaySpeed: 5000,
+          speed: 1000,      
+          prevArrow:'#loc-prev',
+          nextArrow:'#loc-next',   
+        });
       }
+
+     
+
 
 
       jQuery(".phoneVal").on("keypress", function (evt) {

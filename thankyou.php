@@ -8,6 +8,7 @@
         cursor: pointer;
     }
 </style>
+
 <section class="sec2 padding minh100 sec2-bg section-first">
     <div class="container">
         <div class="row">
@@ -32,7 +33,6 @@
         
     </div>
 </section>
-<iframe src="https://trk.rythmworld.in/pixel?adid=6565eaf5d938ff71b771907d" scrolling="no" frameborder="0" width="1" height="1" style="display:none;"></iframe>
 <iframe src="https://adgebra.co.in/Tracker/Conversion?p1=6904&p2=[order_Id]&p3=[product_Id]&p4=[cartvalue]&p5=[flag~custom_values]"width="0" height="0" frameborder="0"></iframe>
 <?php include 'footer.php' ?>
 

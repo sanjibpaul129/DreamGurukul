@@ -16,18 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-  // Create connection
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  // Check connection
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-
-  $query = "INSERT INTO `enquiries`(`name`, `email`, `phone`, `comments`, `utmsource`, `utmcampaign`, `utmmedium`, `utmterm`) VALUES ('" . $_POST["fullname"] . "','" . $_POST["email"] . "','" . $_POST["phone"] . "','" . $_POST["comments"] . "','" . $_POST["utmsource"] . "','" . $_POST["utmcampaign"] . "','" . $_POST["utmmedium"] . "','" . $_POST["utmterm"] . "')";
-
-  $conn->query($query);
-// echo $query;
-// die;
   $curl = curl_init();
 
   curl_setopt_array($curl, array(
@@ -46,7 +34,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   curl_close($curl);
 
   echo $response;
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
 
+  $query = "INSERT INTO `enquiries`(`name`, `email`, `phone`, `comments`, `utmsource`, `utmcampaign`, `utmmedium`, `utmterm`, `response`) VALUES ('" . $_POST["fullname"] . "','" . $_POST["email"] . "','" . $_POST["phone"] . "','" . $_POST["comments"] . "','" . $_POST["utmsource"] . "','" . $_POST["utmcampaign"] . "','" . $_POST["utmmedium"] . "','" . $_POST["utmterm"] . "','" . $response . "')";
+
+  $conn->query($query);
+// echo $query;
+// die;
   // Handle the response as needed
   // if ($response === "") {
   //     // Error handling
