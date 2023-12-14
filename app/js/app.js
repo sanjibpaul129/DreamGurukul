@@ -25,20 +25,17 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 if (winWD <= 992) {     
-	$('.banner-image-main').each(function() {
-		var src = $(this).attr("src");
-		$(this).attr("src", src.replace(/\-desk.webp$/i, "-mob.webp"));
-	});
-
-  $('.banner-image').each(function() {
-		var src = $(this).attr("data-lazy");
-		$(this).attr("data-lazy", src.replace(/\-desk.webp$/i, "-mob.webp"));
-	});
+ 
   $(".nav-links a").on("click", function(){
     $(".nav-links").slideToggle();
     $(".menu-icon-mobile").removeClass("active");
   })
-  
+
+  $('.galleryImg').each(function() {
+    var src = $(this).attr("data-src");
+    $(this).attr("data-src", src.replace(/\.webp$/i, "-mob.webp"));
+  });
+
 }
 $(".menu-icon-mobile").on("click", function(){
   $(".nav-links").slideToggle();
@@ -315,11 +312,7 @@ $(".plans_img").colorbox({
       //   $('.hideph').show();
 
       // });
-     
-        $('.galleryImg').each(function() {
-          var src = $(this).attr("src");
-          $(this).attr("src", src.replace(/\.webp$/i, "-mob.webp"));
-        });
+    
 
         $('.location-adv-slider').slick({
           arrows: true,

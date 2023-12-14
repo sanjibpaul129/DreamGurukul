@@ -1,10 +1,9 @@
 <?php 
 $Google_data = file_get_contents("php://input");
 $decoded_data= json_decode($Google_data, true);
-$name=$decoded_data["user_column_data"][0]["string_value"];
-$phone=$decoded_data["user_column_data"][1]["string_value"];
-$email=$decoded_data["user_column_data"][2]["string_value"];
-
+$name=str_replace(" ","%20",$decoded_data["user_column_data"][0]["string_value"]);
+$phone=str_replace(" ","%20",$decoded_data["user_column_data"][1]["string_value"]);
+$email=str_replace(" ","%20",$decoded_data["user_column_data"][2]["string_value"]);
 
 //echo "<pre>";print_r($_SERVER);
 if($name && $phone && $email){

@@ -1481,12 +1481,6 @@
 }
 .banner-main {
     min-height: 100vh;
-    @media (max-width :$md) {
-        min-height: unset;
-    }
-    @media (max-width:640px) {
-         min-height: unset;
-    }
 }
 .banner-image, .banner-image-main {
     width: 100%;

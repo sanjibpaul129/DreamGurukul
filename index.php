@@ -5,7 +5,11 @@
 
         <div class="banner-slider">
 			<div class="slide pos-rel">
-				<img src="./assets/images/banner-1-desk.webp" alt="" class="banner-image-main">
+				<!-- <img src="./assets/images/banner-1-desk.webp" alt="" class="banner-image-main"> -->
+                <picture>
+                    <source media="(max-width:1024px)" srcset="./assets/images/banner-1-mob.webp" class="img-full">
+                    <img src="./assets/images/banner-1-desk.webp" alt="Flowers" class="img-full">
+                  </picture>
 				<div class="tnc">*T&C Apply</div>
 				<div class="tnc right">Artistic Impression</div>
 			</div>
@@ -131,79 +135,79 @@
                 <div class="instrument-slider">
                     <div class="item">
                         <div class="instrument-box-wrapper bg-pink pos-rel">
-                            <img src="assets/images/inst-right-corner-desk.svg" class="img-responsive inst-right-corner hidden-xs">
-                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs"> 
+                            <img data-src="assets/images/inst-right-corner-desk.svg" class="img-responsive lazy inst-right-corner hidden-xs">
+                            <img data-src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner lazy visible-xs"> 
                             <div class="inst-img-wrapper">
                                 <div class="disptable">
                                     <div class="table-cell">
-                                        <img src="assets/images/sitar.svg" class="img-responsive">  
+                                        <img data-src="assets/images/sitar.svg" class="img-responsive lazy">  
                                     </div>
                                 </div>                                
                             </div>
                             <div class="instrument-content-wrapper">
-                                <img src="assets/images/one.svg" class="img-responsive inst-numbering">
+                                <img data-src="assets/images/one.svg" class="img-responsive inst-numbering lazy">
                                 <div class="inst-content playfair">Master the melodies of music like<br> <span>Pt. Ajoy Chakrabarty!</span></div>
                             </div>
                         </div>
                     </div>  
                     <div class="item">
                         <div class="instrument-box-wrapper bg-pink pos-rel">  
-                            <img src="assets/images/inst-right-corner-desk.svg" class="img-responsive inst-right-corner hidden-xs">                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">                                                    
-                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">                                                    
+                            <img data-src="assets/images/inst-right-corner-desk.svg" class="img-responsive lazy inst-right-corner hidden-xs">                           
+                            <img data-src="assets/images/inst-right-corner.svg" class="img-responsive lazy inst-right-corner visible-xs">                                 
                             <div class="inst-img-wrapper">
                                 <div class="disptable">
                                     <div class="table-cell">
-                                        <img src="assets/images/natrajold.webp" class="img-responsive">
+                                        <img data-src="assets/images/natrajold.webp" class="img-responsive lazy">
                                     </div>
                                 </div>                                
                             </div>
                             <div class="instrument-content-wrapper">
-                                <img src="assets/images/two.svg" class="img-responsive inst-numbering">
+                                <img data-src="assets/images/two.svg" class="img-responsive inst-numbering lazy">
                                 <div class="inst-content playfair">Ace the elegance of <br class="hidden-xs"> dance like<br> <span>Mamta Shankar!</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="instrument-box-wrapper bg-pink pos-rel">
-                            <img src="assets/images/inst-right-corner-desk.svg" class="img-responsive inst-right-corner hidden-xs">                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">
-                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">
+                            <img data-src="assets/images/inst-right-corner-desk.svg" class="img-responsive lazy inst-right-corner hidden-xs">                        
+                            <img data-src="assets/images/inst-right-corner.svg" class="img-responsive lazy inst-right-corner visible-xs">
                             <div class="inst-img-wrapper">
                                 <div class="disptable">
                                     <div class="table-cell">
                                         <div class="pos-rel">                                
-                                            <img src="assets/images/paintbg.webp" class="img-responsive paintpadbgImg">
-                                            <img src="assets/images/paintpad.webp" class="img-responsive paintpadImg">
+                                            <img data-src="assets/images/paintbg.webp" class="img-responsive lazy paintpadbgImg">
+                                            <img data-src="assets/images/paintpad.webp" class="img-responsive lazy paintpadImg">
                                         </div>
                                     </div>
                                 </div>                                
                             </div>                            
                             <div class="instrument-content-wrapper">
-                                <img src="assets/images/three.svg" class="img-responsive inst-numbering">
+                                <img data-src="assets/images/three.svg" class="img-responsive lazy inst-numbering">
                                 <div class="inst-content playfair">Acquire the realm of painting like<br> <span>Shubhaprasanna!</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="instrument-box-wrapper bg-pink pos-rel">
-                            <img src="assets/images/inst-right-corner-desk.svg" class="img-responsive inst-right-corner hidden-xs">                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">
-                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">                            <img src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner visible-xs">
+                            <img data-src="assets/images/inst-right-corner-desk.svg" class="img-responsive lazy inst-right-corner hidden-xs">                          
+                            <img data-src="assets/images/inst-right-corner.svg" class="img-responsive inst-right-corner lazy visible-xs">
                             <div class="inst-img-wrapper">
                                 <div class="disptable">
                                     <div class="table-cell">
-                                        <img src="assets/images/ballold.webp" class="img-responsive">
+                                        <img data-=""="assets/images/ballold.webp" class="img-responsive lazy">
                                     </div>
                                 </div>                                
                             </div>                            
                             <div class="instrument-content-wrapper">
-                                <img src="assets/images/four.svg" class="img-responsive inst-numbering">
+                                <img data-src="assets/images/four.svg" class="img-responsive inst-numbering lazy">
                                 <div class="inst-content playfair">Conquer the throne of football like<br> <span>Bhaichung Bhutia!</span></div>
                             </div>
                         </div>
                     </div>                  
                 </div>
                 <div class="inst-arrows text-center">
-                    <img src="./assets/images/left-arrow.svg" class="inst-arrow" id="inst-prev" alt="">
-                    <img src="./assets/images/right-arrow.svg" class="inst-arrow" id="inst-next" alt="">
+                    <img data-src="./assets/images/left-arrow.svg" class="inst-arrow lazy" id="inst-prev" alt="">
+                    <img data-src="./assets/images/right-arrow.svg" class="inst-arrow lazy" id="inst-next" alt="">
                 </div>
             </div>
         </div>
@@ -411,8 +415,8 @@
                             </div>
                             <div class="visible-md">
                                 <div class="ame-arrows text-center mg-tp-20">
-                                    <img src="./assets/images/left-arrow-2.svg" class="inst-arrow" id="ame-prev" alt="">
-                                    <img src="./assets/images/right-arrow-2.svg" class="inst-arrow" id="ame-next" alt="">
+                                    <img data-src="./assets/images/left-arrow-2.svg" class="inst-arrow lazy" id="ame-prev" alt="">
+                                    <img data-src="./assets/images/right-arrow-2.svg" class="inst-arrow lazy" id="ame-next" alt="">
                                 </div>
                                 <img data-src="assets/images/ame-bg-3.svg" class="img-full lazy visible-md ame-bg-3">
                             </div>
@@ -547,12 +551,12 @@
                                                     <img data-src="assets/images/masterplan.webp" class="img-full lazy"> 
                                                     <div class="floatingbtn">
                                                         <a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                                                            <img src="assets/images/left1.webp" class="left" alt="Overview">
+                                                            <img data-src="assets/images/left1.webp" class="left lazy" alt="Overview">
                                                             <div class="center pos-rel">
                                                                 <div class="centertxt">Master Plan</div>
-                                                                <img src="assets/images/center1.webp" alt="Overview">
+                                                                <img data-src="assets/images/center1.webp" alt="Overview" class="lazy">
                                                             </div>
-                                                            <img src="assets/images/right1.webp" class="right" alt="Overview">
+                                                            <img data-src="assets/images/right1.webp" class="right lazy" alt="Overview">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -586,12 +590,12 @@
                                                     <img data-src="assets/images/Tower-A1.webp" class="img-full lazy"> 
                                                     <div class="floatingbtn">
                                                         <a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                                                            <img src="assets/images/left1.webp" class="left" alt="Overview">
+                                                            <img data-src="assets/images/left1.webp" class="left lazy" alt="Overview">
                                                             <div class="center pos-rel">
                                                                 <div class="centertxt">Floor Plan</div>
-                                                                <img src="assets/images/center1.webp" alt="Overview">
+                                                                <img data-src="assets/images/center1.webp" alt="Overview" class="lazy">
                                                             </div>
-                                                            <img src="assets/images/right1.webp" class="right" alt="Overview">
+                                                            <img data-src="assets/images/right1.webp" class="right lazy" alt="Overview">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -609,12 +613,12 @@
                                                     <img data-src="assets/images/Tower-A1-AND-A2.webp" class="img-full lazy">
                                                     <div class="floatingbtn">
                                                         <a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                                                            <img src="assets/images/left1.webp" class="left" alt="Overview">
+                                                            <img data-src="assets/images/left1.webp" class="left lazy" alt="Overview">
                                                             <div class="center pos-rel">
                                                                 <div class="centertxt">Floor Plan</div>
-                                                                <img src="assets/images/center1.webp" alt="Overview">
+                                                                <img data-src="assets/images/center1.webp" alt="Overview" class="lazy">
                                                             </div>
-                                                            <img src="assets/images/right1.webp" class="right" alt="Overview">
+                                                            <img data-src="assets/images/right1.webp" class="right lazy" alt="Overview">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -630,8 +634,8 @@
                                 </div>
                             </div>
                             <div class="tower-a-arrows text-center mg-tp-20 visible-xs">
-                                <img src="./assets/images/left-arrow-2.svg" class="inst-arrow" id="tower-a-prev" alt="">
-                                <img src="./assets/images/right-arrow-2.svg" class="inst-arrow" id="tower-a-next" alt="">
+                                <img data-src="./assets/images/left-arrow-2.svg" class="inst-arrow lazy" id="tower-a-prev" alt="">
+                                <img data-src="./assets/images/right-arrow-2.svg" class="inst-arrow lazy" id="tower-a-next" alt="">
                             </div>
                         </div>   
                         <div id="tower-b" class="tabs-wrap mg-tp-30 revealOnScroll" data-animation="fadeInUp" data-timeout="200" style="display:none;">
@@ -653,12 +657,12 @@
                                                     <img data-src="assets/images/Tower-B.webp" class="img-full lazy">
                                                     <div class="floatingbtn">
                                                         <a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                                                            <img src="assets/images/left1.webp" class="left" alt="Overview">
+                                                            <img data-src="assets/images/left1.webp" class="left lazy" alt="Overview">
                                                             <div class="center pos-rel">
                                                                 <div class="centertxt">Floor Plan</div>
-                                                                <img src="assets/images/center1.webp" alt="Overview">
+                                                                <img data-src="assets/images/center1.webp" alt="Overview" class="lazy">
                                                             </div>
-                                                            <img src="assets/images/right1.webp" class="right" alt="Overview">
+                                                            <img data-src="assets/images/right1.webp" class="right lazy" alt="Overview">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -676,12 +680,12 @@
                                                     <img data-src="assets/images/Tower-B-2nd-floor.webp" class="img-full lazy">
                                                     <div class="floatingbtn">
                                                         <a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                                                            <img src="assets/images/left1.webp" class="left" alt="Overview">
+                                                            <img data-src="assets/images/left1.webp" class="left lazy" alt="Overview">
                                                             <div class="center pos-rel">
                                                                 <div class="centertxt">Floor Plan</div>
-                                                                <img src="assets/images/center1.webp" alt="Overview">
+                                                                <img data-src="assets/images/center1.webp" class="lazy" alt="Overview">
                                                             </div>
-                                                            <img src="assets/images/right1.webp" class="right" alt="Overview">
+                                                            <img data-src="assets/images/right1.webp" class="right lazy" alt="Overview">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -699,12 +703,12 @@
                                                     <img data-src="assets/images/Tower-B-3rd-floor.webp" class="img-full lazy">
                                                     <div class="floatingbtn">
                                                         <a class="btnbox" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                                                            <img src="assets/images/left1.webp" class="left" alt="Overview">
+                                                            <img data-src="assets/images/left1.webp" class="left lazy" alt="Overview">
                                                             <div class="center pos-rel">
                                                                 <div class="centertxt">Floor Plan</div>
-                                                                <img src="assets/images/center1.webp" alt="Overview">
+                                                                <img data-src="assets/images/center1.webp" alt="Overview" class="lazy">
                                                             </div>
-                                                            <img src="assets/images/right1.webp" class="right" alt="Overview">
+                                                            <img data-src="assets/images/right1.webp" class="right lazy" alt="Overview">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -720,8 +724,8 @@
                                 </div>
                             </div>
                             <div class="tower-b-arrows text-center mg-tp-20 visible-xs">
-                                <img src="./assets/images/left-arrow-2.svg" class="inst-arrow" id="tower-b-prev" alt="">
-                                <img src="./assets/images/right-arrow-2.svg" class="inst-arrow" id="tower-b-next" alt="">
+                                <img data-src="./assets/images/left-arrow-2.svg" class="inst-arrow lazy" id="tower-b-prev" alt="">
+                                <img data-src="./assets/images/right-arrow-2.svg" class="inst-arrow lazy" id="tower-b-next" alt="">
                             </div>
                         </div>    
                     </div>
@@ -745,37 +749,37 @@
                             </div> -->
                             <div class="item">
                                 <div class="pos-rel">
-                                    <img src="assets/images/gallery-img-2.webp" class="img-full lazy galleryImg">
+                                    <img data-src="assets/images/gallery-img-2.webp" class="img-full lazy galleryImg">
                                     <p class="artImp">Artistic Impression</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pos-rel">
-                                    <img src="assets/images/gallery-img-3.webp" class="img-full lazy galleryImg">
+                                    <img data-src="assets/images/gallery-img-3.webp" class="img-full lazy galleryImg">
                                     <p class="artImp">Artistic Impression</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pos-rel">
-                                    <img src="assets/images/gallery-img-4.webp" class="img-full lazy galleryImg">
+                                    <img data-src="assets/images/gallery-img-4.webp" class="img-full lazy galleryImg">
                                     <p class="artImp">Artistic Impression</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pos-rel">
-                                    <img src="assets/images/gallery-img-5.webp" class="img-full lazy galleryImg">
+                                    <img data-src="assets/images/gallery-img-5.webp" class="img-full lazy galleryImg">
                                     <p class="artImp">Artistic Impression</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pos-rel">
-                                    <img src="assets/images/gallery-img-6.webp" class="img-full lazy galleryImg">
+                                    <img data-src="assets/images/gallery-img-6.webp" class="img-full lazy galleryImg">
                                     <p class="artImp">Artistic Impression</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pos-rel">
-                                    <img src="assets/images/gallery-img-7.webp" class="img-full lazy galleryImg">
+                                    <img data-src="assets/images/gallery-img-7.webp" class="img-full lazy galleryImg">
                                     <p class="artImp">Artistic Impression</p>
                                 </div>
                             </div>
@@ -817,7 +821,7 @@
                             </div>-->
                             <div class="item">
                                 <div class="pos-rel">
-                                    <img src="assets/images/gallery-img-14.webp" class="img-full lazy galleryImg">
+                                    <img data-src="assets/images/gallery-img-14.webp" class="img-full lazy galleryImg">
                                     <p class="artImp">Artistic Impression</p>
                                 </div>
                             </div>
@@ -829,8 +833,8 @@
                             </div> -->
                         </div>
                         <div class="gallery-arrows text-center">
-                            <img src="./assets/images/left-arrow-3.svg" class="inst-arrow pd-10" id="gallery-prev" alt="">
-                            <img src="./assets/images/right-arrow-3.svg" class="inst-arrow pd-10" id="gallery-next" alt="">
+                            <img data-src="./assets/images/left-arrow-3.svg" class="inst-arrow pd-10 lazy" id="gallery-prev" alt="gallery-prev">
+                            <img data-src="./assets/images/right-arrow-3.svg" class="inst-arrow pd-10 lazy" id="gallery-next" alt="gallery-next">
                         </div>
                     </div>
                 </div>
@@ -846,18 +850,18 @@
                     <p class="sec-desc mg-tp-20 revealOnScroll" data-animation="fadeInUp" data-timeout="400">Located close to the airport in the pristine neighborhood of Madhyamgram, Kolkata, Dream Gurukul is the epitome of luxury. Own a home that is seamlessly close to every convenience of the city. Being well-connected to the city’s key spots, this is the ideal place you were looking for!</p> 
                 </div>
                 <div class="col-12 pos-rel mg-tp-30">
-                    <iframe class="lazy dispblock" controls="false" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.8509592621153!2d88.45681189976243!3d22.67727787645114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89fb438c8b7d1%3A0xf2a430cead652868!2sDream%20Gurukul!5e0!3m2!1sen!2sin!4v1700744670578!5m2!1sen!2sin&zoom=xx&controls=0" gestureHandling="" width="100%" height="441" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="lazy dispblock" controls="false" class="lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.8509592621153!2d88.45681189976243!3d22.67727787645114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89fb438c8b7d1%3A0xf2a430cead652868!2sDream%20Gurukul!5e0!3m2!1sen!2sin!4v1700744670578!5m2!1sen!2sin&zoom=xx&controls=0" gestureHandling="" width="100%" height="441" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/JmvmaDw6kn9cacy5A" target="_blank" class="theme-btn get-direction text-medium">GET DIRECTION</a>
                 </div>
                 <div class="col-12 location-advantages-wrapper">
-                    <img src="assets/images/location-main-image.webp" alt="" class="img-full">
+                    <img data-src="assets/images/location-main-image.webp" alt="location-main-mobile" class="img-full lazy">
                 </div>
                
             </div>
         </div>
         <div class="location-advantages-mob">
             <p class="sec-head">Location Advantages</p>
-            <img src="assets/images/location-main-mobile.webp" alt="" class="img-full">
+            <img data-src="assets/images/location-main-mobile.webp" alt="location-main-mobile" class="img-full lazy">
             <div class="location-adv-slider">
                 <div class="">
                     <div class="location-content-wrapper">
@@ -999,8 +1003,8 @@
                 </div>
             </div>
             <div class="loc-arrows-wrapper text-center">
-                <img src="./assets/images/left-arrow-4.svg" class="inst-arrow pd-10" id="loc-prev" alt="">
-                <img src="./assets/images/right-arrow-4.svg" class="inst-arrow pd-10" id="loc-next" alt="">
+                <img data-src="./assets/images/left-arrow-4.svg" class="inst-arrow pd-10 lazy" id="loc-prev" alt="loc-arrows-wrapper">
+                <img data-src="./assets/images/right-arrow-4.svg" class="inst-arrow pd-10 lazy" id="loc-next" alt="loc-arrows-wrapper">
             </div>
         </div>
     </section>
@@ -1013,7 +1017,7 @@
                     <!-- <div class="abtLogo"><img src="assets/images/dreamgklogo.webp" alt=""></div> -->
                     <div class="col-12 abt_division">
                         <div class="col-xs-12">
-                            <div class="abtLogo"><img src="assets/images/dreamgklogo.webp" alt=""></div>
+                            <div class="abtLogo"><img data-src="assets/images/dreamgklogo.webp" alt="dreamgklogo" class="lazy"></div>
                             <div class="sec-title revealOnScroll" data-animation="fadeInUp" data-timeout="200">About Jain Group</div>
                             <p class="sec-head mg-tp-10 revealOnScroll" data-animation="fadeInUp" data-timeout="300">Creating Landmarks That Stand <br class="hidden-xs"> the Test of Time!</p>
                             <p class="sec-desc mg-tp-20 revealOnScroll" data-animation="fadeInUp" data-timeout="400">The Jain Group successfully ventured into real estate by creating a series of residential spaces at strategic locations in Kolkata, Siliguri and Durgapur under the aegis of Dream Homes.<br> Dream Homes in Kolkata, Siliguri and Durgapur from the Jain Group is a trusted brand in the residential space in Kolkata. Having developed over a million square feet of residential and commercial real estate space, the Jain Group has now launched a slew of real estate projects across the cities of Kolkata, Siliguri and Durgapur.<br><br> Dream Homes offers high-quality living at great investment points. Jain Group’s commitment to quality is reflected in all aspects of the development cycle, including planning, construction, customer service and property management.</p> 

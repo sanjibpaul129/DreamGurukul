@@ -49,7 +49,7 @@
 <script src="assets/js/jquery.js"></script>
 <!-- <script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script> -->
 <script type="text/javascript" src="assets/js/all.js"></script>
-<script src="assets/js/jquery.validate.js"></script>
+<script defer src="assets/js/jquery.validate.js"></script>
 <script>
 	document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
@@ -119,8 +119,13 @@
 
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PZRZDBQC" height="0" width="0"
-              style="display:none;visibility:hidden"></iframe></noscript>
-          <script>setTimeout(function () {
+style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TS9HG4N" height="0" width="0"
+style="display:none;visibility:hidden"></iframe></noscript>
+
+    <script>
+		  setTimeout(function () {
+
               (function (w, d, s, l, i) {
                 w[l] = w[l] || []; w[l].push({
                   'gtm.start':
@@ -129,14 +134,8 @@
                   j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
               })(window, document, 'script', 'dataLayer', 'GTM-PZRZDBQC');
-            }, 5000);</script>
-          <!-- End Google Tag Manager -->
 
-          <!-- Google Tag Manager -->
-          <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TS9HG4N" height="0" width="0"
-              style="display:none;visibility:hidden"></iframe></noscript>
-          <script>setTimeout(function () {
-              (function (w, d, s, l, i) {
+			  (function (w, d, s, l, i) {
                 w[l] = w[l] || []; w[l].push({
                   'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
@@ -144,8 +143,9 @@
                   j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
               })(window, document, 'script', 'dataLayer', 'GTM-TS9HG4N');
-            }, 5000);</script>
-          <!-- End Google Tag Manager -->
+
+            }, 5000);
+	</script>
 </body>
 
 </html>
