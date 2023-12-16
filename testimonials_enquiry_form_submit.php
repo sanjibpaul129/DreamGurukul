@@ -5,7 +5,7 @@
     $comments = $_POST["comments"];
     $project = "Dream Gurukul";
     $utm_form_name = "Enquiry Form";
-    $utm_source = $_POST["utm_source"];
+    $utm_source = "NewsPaper";
     $utm_medium = $_POST["utm_medium"];
     $apikey = "kG6vgYgUqEmnHUtHX15pNQ";
 
