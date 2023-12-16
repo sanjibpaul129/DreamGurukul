@@ -439,7 +439,7 @@
     </header>
     <div class="container">
         <div class="left-container">
-            <img class="gurus-pic" src="testimonial_images/gurus.jpeg" alt="gurus">
+            <img class="gurus-pic" src="testimonial_images/gurus.webp" alt="gurus">
             <h2>
                 Testimonials of all the Gurus
             </h2>
