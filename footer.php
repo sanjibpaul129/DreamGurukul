@@ -38,8 +38,8 @@
 </footer>
 <div class="col-12 footer-call-enquire">
 <div class="col-6 ">
-	<a href="tel:+919513436882" style="color:#fff;" id="click_to_call" data-event-category="Footer" data-event-action="click" data-event-name="Call">+91 951 343 6882</a>
-	</div>
+<a href="" id="click_to_call" data-event-category="Footer" data-event-action="click" data-event-name="Call">Call Us</a>
+</div>
 	<div class="col-6 enq">
 	<div class="" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" data-event-category="Footer" data-event-action="click" data-event-name="ENQUIRE NOW" style="color:#fff;border-left:1px solid">ENQUIRE NOW</div>
 	</div>
