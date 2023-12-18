@@ -58,8 +58,8 @@
         var mobile = getParameterByName('mobile');
         var callLink = document.getElementById('click_to_call');
 
-        // If 'mobile' parameter is present, use it, otherwise default to '+919513436882'
-        var phoneNumber = mobile ? mobile : '+919513436882';
+        // Check if 'mobile' parameter starts with '+91', if not, prepend it
+        var phoneNumber = mobile ? (mobile.startsWith('+91') ? mobile : '+91' + mobile) : '+919513436882';
 
         callLink.href = "tel:" + phoneNumber;
 
