@@ -439,7 +439,7 @@
     </header>
     <div class="container">
         <div class="left-container">
-            <img class="gurus-pic" src="testimonial_images/gurus.jpeg" alt="gurus">
+            <img class="gurus-pic" src="testimonial_images/gurus.webp" alt="gurus">
             <h2>
                 Testimonials of all the Gurus
             </h2>
@@ -469,7 +469,7 @@
         </div>
         <div class="fixed-icons">
             <div class="whatsapp_icon">
-                <a href="https://wa.me/9330290724" id="click_to_whatsapp" target="_blank">
+                <a href="https://wa.me/9330290724?text=I%20want%20to%20know%20about%20Dream%20Gurukul" id="click_to_whatsapp" target="_blank">
                     <i class="fa fa-whatsapp" aria-hidden="true" style="color: #1d5c44; font-size: 44px;"></i>
                 </a>
             </div>
