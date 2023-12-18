@@ -46,7 +46,7 @@
 	
 </div>
 <script>
-	 document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () {
             function getParameterByName(name) {
                 name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
                 var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -57,12 +57,13 @@
             var mobile = getParameterByName('mobile');
             var callLink = document.getElementById('click_to_call');
 
-            if (mobile) {
-                callLink.href = "tel:" + mobile;
-                callLink.style.display = "block";
-            }
+            // Use the provided mobile number or default to '+919513436882'
+            var phoneNumber = mobile || '+919513436882';
+
+            callLink.href = "tel:" + phoneNumber;
+            callLink.style.display = "block";
         });
-</script>
+    </script>
 
 <script src="assets/js/jquery.js"></script>
 <!-- <script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script> -->
