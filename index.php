@@ -853,13 +853,244 @@
                     <iframe class="lazy dispblock" controls="false" class="lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.8509592621153!2d88.45681189976243!3d22.67727787645114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89fb438c8b7d1%3A0xf2a430cead652868!2sDream%20Gurukul!5e0!3m2!1sen!2sin!4v1700744670578!5m2!1sen!2sin&zoom=xx&controls=0" gestureHandling="" width="100%" height="441" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/JmvmaDw6kn9cacy5A" target="_blank" class="theme-btn get-direction text-medium">GET DIRECTION</a>
                 </div>
+
                 <div class="col-12 location-advantages-wrapper">
-                    <img data-src="assets/images/location-main-image.webp" alt="location-main-mobile" class="img-full lazy">
+
+                    <p class="sec-head">Location Advantages</p>
+
+                    <div class="slider-center-content">
+
+                        <div class="center-image-wrapper col-6 col-md-12">
+                            <img data-src="assets/images/location-advantages-main.svg" alt="location-main-mobile" class="img-responsive lazy">
+    
+                            <div class="circle-animation">
+    
+                                <div class="">
+                                    <div class="circle-0 circle-pos animate-ball active_ball animated-circle">
+                                        <div class="slider-circle">
+                                            <img src="./assets/images/circle-slider-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="">
+                                    <div class="circle-1 circle-pos animated-circle">
+                                        <div class="slider-circle">
+                                            <img src="./assets/images/circle-slider-4.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="">
+                                    <div class="circle-2 circle-pos animated-circle">
+                                        <div class="slider-circle">
+                                            <img src="./assets/images/circle-slider-3.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="">
+                                    <div class="circle-3 circle-pos animated-circle">
+                                        <div class="slider-circle">
+                                            <img src="./assets/images/circle-slider-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                              <div class="">
+                                <div class="circle-4 circle-pos animated-circle">
+                                    <div class="slider-circle">
+                                        <img src="./assets/images/circle-slider-5.svg" alt="">
+                                    </div>
+        
+                                </div>
+                              </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="col-6 col-md-12">
+                            <div class="location-adv-slider">
+    
+                                <div class="">
+                                    <div class="slide-2">
+                                        <p class="loc-adv-heading">Connectivity</p>
+                                        <div class="location-content-wrapper">
+                                            <p class="loc-con-txt">Upcoming New Barrackpore Metro Station</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">3 min</p>
+                                            <p class="loc-con-txt">Upcoming Madhyamgram Metro Station & Madhyamgram Railway Station </p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">9 min</p>
+                                            <p class="loc-con-txt">NSCBI Airport</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">15 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="">
+                                    <div class="slide-1">
+                                        <p class="loc-adv-heading">School</p>
+                                        <div class="location-content-wrapper">
+                                            <p class="loc-con-txt">Kidzee</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">2 min</p>
+                                            <p class="loc-con-txt">Julien Day School (ICSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">2 min</p>
+                                            <p class="loc-con-txt">Sudhir Memorial Institute (CBSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">3 min</p>
+                                            <p class="loc-con-txt">Monalisa English Medium School (ICSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">5 min</p>
+                                            <p class="loc-con-txt">Calcutta Public School (ICSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">9 min</p>
+                                            <p class="loc-con-txt">Indira Gandhi Memorial School (CBSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">9 min</p>
+                                            <p class="loc-con-txt">Camellia Public School (CBSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">15 min</p>
+                                            <p class="loc-con-txt">Delhi Public International School (ICSE/ISC)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">7 min</p>
+                                            <p class="loc-con-txt">Michaelnagar Shikshaniketan HS School (WB Board)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">6 min</p>
+                                            <p class="loc-con-txt">Madhyamgram High School</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">9 min</p>
+                                            <p class="loc-con-txt">Barasat Govt. High School</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">14 min</p>
+                                            <p class="loc-con-txt">Barasat DPS (CBSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">21 min</p>
+                                            <p class="loc-con-txt">Adamas World School (CBSE)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">26 min</p>
+                    
+                                        </div>
+                                    </div>
+        
+                                </div>
+                
+                                <div class="">
+                                    <div class="slide-3">
+                                        <p class="loc-adv-heading">Colleges</p>
+                                        <div class="location-content-wrapper">
+                                            <p class="loc-con-txt">BT College</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">4 min</p>
+                                            <p class="loc-con-txt">APC College</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">14 min</p>
+                                            <p class="loc-con-txt">BCDA College of Pharmacy & Technology</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">12 min</p>
+                                            <p class="loc-con-txt">Madhyamgram Vivekananda College</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">9 min</p>
+                                            <p class="loc-con-txt">Barasat College</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">14 min</p>
+                                            <p class="loc-con-txt">Adamas University (Adamas Knowledge City)</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">26 min</p>
+                                            <p class="loc-con-txt">Barasat Medical College</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">19 min</p>
+                                            
+                                        </div>
+                                    </div>
+                                
+                                </div>
+    
+                                <div class="">
+                                    <div class="slide-5">
+                                        <p class="loc-adv-heading">Hospital</p>
+                                        <div class="location-content-wrapper">
+                                            <p class="loc-con-txt">Narayana Multispeciality Hospital</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">8 min</p>
+                                            <p class="loc-con-txt">Heartland Hospital</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">2 min</p>
+                                            <p class="loc-con-txt">Icon Healthcare Multispeciality Hospital, Madhyamgram</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">3 min</p>
+                                            <p class="loc-con-txt">Madhyamgram Govt. Hospital</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">5 min</p>
+                                            <p class="loc-con-txt">Barasat Govt. Medical College & Hospital</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">19 min</p>
+                                            <p class="loc-con-txt">Care & Cure Hospital, Barasat</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">16 min</p>
+                                            <p class="loc-con-txt">Disha Eye Hospital, Barasat</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">13 min</p>
+                                            <p class="loc-con-txt">Romalinda Multispeciality Hospital </p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">2 min</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="">
+                                    <div class="slide-4">
+                                        <p class="loc-adv-heading">Daily Market & Shopping Centre</p>
+                                        <div class="location-content-wrapper">
+                                            <p class="loc-con-txt">Ganganagar Haat</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">3 min</p>
+                                            <p class="loc-con-txt">Doltala Bazar</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">2 min</p>
+                                            <p class="loc-con-txt">More Super Market</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">5 min</p>
+                                            <p class="loc-con-txt">Star Mall</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">9 min</p>
+                                            <p class="loc-con-txt">Vishal Mega Mart</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">12 min</p>
+                                            <p class="loc-con-txt">Reliance Mall</p>
+                                            <p class="loc-con-txt">.......</p>
+                                            <p class="loc-con-txt">7 min</p>
+                                            
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+    
+        
+                                </div>
+                                <div class="loc-arrows-wrapper text-center">
+                                    <img data-src="./assets/images/left-arrow-4.svg" class="inst-arrow pd-10 lazy" id="loc-prev" alt="loc-arrows-wrapper">
+                                    <img data-src="./assets/images/right-arrow-4.svg" class="inst-arrow pd-10 lazy" id="loc-next" alt="loc-arrows-wrapper">
+                                </div>
+                        </div>
+
+                    </div>
+                   
+                      
+                    </div>
+                   
+
+
                 </div>
                
             </div>
         </div>
-        <div class="location-advantages-mob">
+        <!-- <div class="location-advantages-mob">
             <p class="sec-head">Location Advantages</p>
             <img data-src="assets/images/location-main-mobile.webp" alt="location-main-mobile" class="img-full lazy">
             <div class="location-adv-slider">
@@ -1006,7 +1237,7 @@
                 <img data-src="./assets/images/left-arrow-4.svg" class="inst-arrow pd-10 lazy" id="loc-prev" alt="loc-arrows-wrapper">
                 <img data-src="./assets/images/right-arrow-4.svg" class="inst-arrow pd-10 lazy" id="loc-next" alt="loc-arrows-wrapper">
             </div>
-        </div>
+        </div> -->
     </section>
 
 

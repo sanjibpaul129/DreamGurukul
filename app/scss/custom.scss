@@ -939,46 +939,183 @@
             visibility: none !important;
         }
     }
+   
     .location-advantages-wrapper {
-        margin-top: 30px;
-        @media (max-width: $xs) {
-            display: none;
-        }
-    }
-    .location-advantages-mob {
-        display: none;
-        @media (max-width: $xs) {
-            display: block;
-        }
         
         .sec-head {
-            @media (max-width: $xs) {
-                margin-top: 30px;
+                margin:30px 0;
                 text-align: center!important;
                 display: block;
+
+                @media (max-width: $xs) {
+                    margin: 20px 0 0 0 ;
+                }
+        }
+
+        .slider-center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: $md) {
+                flex-direction: column;
+            }
+        }
+
+        .center-image-wrapper {
+            margin: -30px auto 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            width: 585px;
+
+            @media (max-width: $md) {
+                margin: 150px auto;
+                scale: 1.5;
+
+                @media (max-width: $xs) {
+                    min-height: 200px;
+                    margin: unset;
+                    scale: 0.7;
+                }
+            }
+
+            .circle-animation {
+
+                .slick-list {
+                    overflow: visible;
+                }
+                .circle-pos {
+                    position: absolute;
+
+                    .slider-circle {
+                        transition: all 0.4s ease-in-out;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+    
+                        &::after {
+                            position: absolute;
+                        transition: all 0.4s ease-in-out;
+                            content: '';
+                            background-image: url(../../assets/images/rotating-circ.svg);
+                            width: 90px;
+                            height: 65px;
+                            border-radius: 50%;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            transform: rotate(45deg);
+                        }
+    
+                        img {
+                            transition: all 0.4s ease-in-out;
+                            scale: 1.2;
+                        }
+                    }
+                }
+
+                .circle-0 {
+                    top: -375px;
+                    left: 295px;
+                }
+
+                .circle-1 {
+                    right: 110px;
+                    top: -280px;
+                }
+
+                .circle-2 {
+                    bottom: 49px;
+                    right: 141px;
+                }
+
+                .circle-3 {
+                    bottom: 38px;
+                    left: 166px;                
+                }
+
+                .circle-4 {
+                    top: -285px;
+                    left: 126px;
+                }
+
+                .animate-ball {
+                    .slider-circle {
+
+                        &::after {
+                            animation: rotation 5s infinite linear;
+                            cursor: pointer;
+                            width: 100px;
+                            height: 80px;
+        
+                            @keyframes rotation { 
+                                from { 
+                                    transform: rotate(0deg); 
+                                } to { 
+                                    transform: rotate(360deg); 
+                                }
+                            }
+                        }
+
+                        img {
+                            scale: 2;
+                            opacity: 1;
+                        }
+
+                    }
+                   
+                }
+            }
+    }
+
+    .location-adv-slider {
+        position: relative;
+        z-index: 9;
+
+        .loc-adv-heading {
+            font: normal normal 600 22px/32px 'Inter';
+            color: hsl(6, 58%, 13%);
+            text-align: left;
+            padding-left: 35px;
+            padding-bottom: 10px;
+
+            @media (max-width: $xs) {
+                padding: unset;
             }
         }
 
         .location-content-wrapper {
+            display: grid;
+            grid-template-columns: 60% 15% 25%;
+            padding: 0 0px 0 35px;
+            margin: auto;
+            text-align: left;
 
             @media (max-width: $xs) {
-                display: grid;
-                grid-template-columns: 60% 15% 25%;
-                width: 100%;
-                padding: 0 0px 0 35px;
-                margin: auto;
+                padding: unset;
             }
-
-            .loc-con-txt {
-                font: normal normal normal 12px/22px 'Inter';
-                color: #34120E;
-            }
-           
+       
+        .loc-con-txt {
+            font: normal normal normal 14px/28px 'Inter';
+            color: #34120E;
         }
-        .loc-arrows-wrapper {
-            margin-top: 20px;
+       
+    }
+    }
+
+    .loc-arrows-wrapper {
+        margin-top: 20px;
+
+        .slick-arrow.slick-hidden {
+            display: block!important;
         }
     }
+     
+    }
+
     .secUL{
         position: relative;
         &::after{
@@ -1481,6 +1618,10 @@
 }
 .banner-main {
     min-height: 100vh;
+
+    @media (max-width: $xs) {
+        min-height: unset;
+    }
 }
 .banner-image, .banner-image-main {
     width: 100%;
