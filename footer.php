@@ -38,13 +38,30 @@
 </footer>
 <div class="col-12 footer-call-enquire">
 <div class="col-6 ">
-	<a href="tel:+919513436882" style="color:#fff;" data-event-category="Footer" data-event-action="click" data-event-name="Call">+91 951 343 6882</a>
+	<a href="tel:+919513436882" style="color:#fff;" id="click_to_call" data-event-category="Footer" data-event-action="click" data-event-name="Call">+91 951 343 6882</a>
 	</div>
 	<div class="col-6 enq">
 	<div class="" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" data-event-category="Footer" data-event-action="click" data-event-name="ENQUIRE NOW" style="color:#fff;border-left:1px solid">ENQUIRE NOW</div>
 	</div>
 	
 </div>
+<script>
+	jQuery(document).ready(function ($) {
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      var mobile = getParameterByName('mobile');
+      if (mobile) {
+        document.getElementById('click_to_call').setAttribute('href', "tel:" + mobile.toString());
+        document.getElementById('click_to_call').style.display = "block";
+      } else {
+        document.getElementById('click_to_call').style.display = "none";
+      }
+</script>
 
 <script src="assets/js/jquery.js"></script>
 <!-- <script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script> -->
