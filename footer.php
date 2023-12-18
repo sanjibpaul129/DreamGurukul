@@ -38,7 +38,7 @@
 </footer>
 <div class="col-12 footer-call-enquire">
 <div class="col-6 ">
-	<a href="tel:+919513436882" style="color:#fff;" id="col-12 footer-call-enquire" data-event-category="Footer" data-event-action="click" data-event-name="Call">+91 951 343 6882</a>
+	<a href="tel:+919513436882" style="color:#fff;" id="click_to_call" data-event-category="Footer" data-event-action="click" data-event-name="Call">+91 951 343 6882</a>
 	</div>
 	<div class="col-6 enq">
 	<div class="" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" data-event-category="Footer" data-event-action="click" data-event-name="ENQUIRE NOW" style="color:#fff;border-left:1px solid">ENQUIRE NOW</div>
@@ -46,21 +46,22 @@
 	
 </div>
 <script>
-	jQuery(document).ready(function ($) {
-      function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-          results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
+	 document.addEventListener('DOMContentLoaded', function () {
+            function getParameterByName(name) {
+                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                    results = regex.exec(window.location.search);
+                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
 
-      var mobile = getParameterByName('mobile');
-      if (mobile) {
-        document.getElementById('col-12 footer-call-enquire').setAttribute('href', "tel:" + mobile.toString());
-        document.getElementById('col-12 footer-call-enquire').style.display = "block";
-      } else {
-        document.getElementById('col-12 footer-call-enquire').style.display = "none";
-      }
+            var mobile = getParameterByName('mobile');
+            var callLink = document.getElementById('click_to_call');
+
+            if (mobile) {
+                callLink.href = "tel:" + mobile;
+                callLink.style.display = "block";
+            }
+        });
 </script>
 
 <script src="assets/js/jquery.js"></script>
