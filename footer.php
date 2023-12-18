@@ -45,27 +45,33 @@
 	</div>
 	
 </div>
+
 <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            function getParameterByName(name) {
-                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-                    results = regex.exec(window.location.search);
-                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-            }
+    document.addEventListener('DOMContentLoaded', function () {
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(window.location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 
-            var mobile = getParameterByName('mobile');
-			console.log("Mobile parameter:", mobile); // This will log the value of the mobile parameter
-			var callLink = document.getElementById('click_to_call');
+        var mobile = getParameterByName('mobile');
+        var callLink = document.getElementById('click_to_call');
 
+        // If 'mobile' parameter is present, use it, otherwise default to '+919513436882'
+        var phoneNumber = mobile ? mobile : '+919513436882';
 
-            // Use the provided mobile number or default to '+919513436882'
-            var phoneNumber = mobile || '+919513436882';
+        callLink.href = "tel:" + phoneNumber;
 
-            callLink.href = "tel:" + phoneNumber;
-            callLink.style.display = "block";
-        });
-    </script>
+        // Format the display of the phone number
+        var formattedNumber = phoneNumber;
+        if (phoneNumber.startsWith('+91')) {
+            formattedNumber = phoneNumber.slice(0, 3) + " " + phoneNumber.slice(3, 6) + " " + phoneNumber.slice(6);
+        }
+
+        callLink.textContent = formattedNumber;
+    });
+</script>
 
 <script src="assets/js/jquery.js"></script>
 <!-- <script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script> -->
