@@ -9,6 +9,7 @@
 	<title>Dream Gurukul: Buy 3 BHK Flats in Madhyamgram, Kolkata</title>
 	<meta name="description" content="Dream Gurukul by Jain Group offers child centric 3 BHK flats for sale in Madhyamgram Kolkata near airport to enhance lifestyle of your kids for a bright future." />
 	<meta name="keywords" content="Dream Gurukul" />
+	<meta name="robots" content="noindex, nofollow">
 		<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>" />
 		<link rel="stylesheet" href="assets/css/colorbox.css" />
 		<link rel="stylesheet" href="assets/css/all.css">
