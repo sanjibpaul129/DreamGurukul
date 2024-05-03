@@ -200,12 +200,13 @@
 
         .form-container {
             display: none;
-            position: absolute;
+            position: fixed;
             width: 100%;
             height: 100vh;
             padding: 35% 0;
             background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
+            top: 0;
 
         }
 
@@ -525,14 +526,10 @@
         }
         document.querySelector('.enquiry-button').addEventListener('click', function () {
             document.querySelector('.form-container').style.display = 'block';
-            document.querySelector('.enquiry-button').style.display = 'none';
-            document.querySelector('.fixed-icons').style.display = 'none';
         });
 
         document.querySelector('.closeForm').addEventListener('click', function () {
             document.querySelector('.form-container').style.display = 'none';
-            document.querySelector('.enquiry-button').style.display = 'block';
-            document.querySelector('.fixed-icons').style.display = 'block';
         });
 
 
